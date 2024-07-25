@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Gui.GuiElement.xsd">
+
+    <GuiElement Name="FactionTraitHomePlanetPlanetTypeCustom01">
+        <Title>%FactionTraitHomePlanetPlanetTypeCustom01Title</Title>
+        <Description>%FactionTraitHomePlanetPlanetTypeCustom01Description</Description>
+        <Icons>
+            <Icon Size="Small" Path="Bitmaps\Atlased\Categories\CategoryPlanetImprovementSmall" />
+        </Icons>
+    </GuiElement>
+
+    <GuiElement Name="FactionTraitHomePlanetPlanetTypeCustom02">
+        <Title>%FactionTraitHomePlanetPlanetTypeCustom02Title</Title>
+        <Description>%FactionTraitHomePlanetPlanetTypeCustom02Description</Description>
+        <Icons>
+            <Icon Size="Small" Path="Bitmaps\Atlased\Categories\CategoryPlanetImprovementSmall" />
+        </Icons>
+    </GuiElement>
+
+    <GuiElement Name="FactionTraitHomePlanetPlanetTypeCustom03">
+        <Title>%FactionTraitHomePlanetPlanetTypeCustom03Title</Title>
+        <Description>%FactionTraitHomePlanetPlanetTypeCustom03Description</Description>
+        <Icons>
+            <Icon Size="Small" Path="Bitmaps\Atlased\Categories\CategoryPlanetImprovementSmall" />
+        </Icons>
+    </GuiElement>
+
+    <GuiElement Name="FactionTraitHomePlanetPlanetTypeCustom04">
+        <Title>%FactionTraitHomePlanetPlanetTypeCustom04Title</Title>
+        <Description>%FactionTraitHomePlanetPlanetTypeCustom04Description</Description>
+        <Icons>
+            <Icon Size="Small" Path="Bitmaps\Atlased\Categories\CategoryPlanetImprovementSmall" />
+        </Icons>
+    </GuiElement>
+
+    <GuiElement Name="FactionTraitHomePlanetPlanetTypeCustom05">
+        <Title>%FactionTraitHomePlanetPlanetTypeCustom05Title</Title>
+        <Description>%FactionTraitHomePlanetPlanetTypeCustom05Description</Description>
+        <Icons>
+            <Icon Size="Small" Path="Bitmaps\Atlased\Categories\CategoryPlanetImprovementSmall" />
+        </Icons>
+    </GuiElement>
+
+    <GuiElement Name="FactionTraitHomePlanetPlanetTypeCustom06">
+        <Title>%FactionTraitHomePlanetPlanetTypeCustom06Title</Title>
+        <Description>%FactionTraitHomePlanetPlanetTypeCustom06Description</Description>
+        <Icons>
+            <Icon Size="Small" Path="Bitmaps\Atlased\Categories\CategoryPlanetImprovementSmall" />
+        </Icons>
+    </GuiElement>
+
+    <GuiElement Name="FactionTraitHomePlanetPlanetTypeCustom07">
+        <Title>%FactionTraitHomePlanetPlanetTypeCustom07Title</Title>
+        <Description>%FactionTraitHomePlanetPlanetTypeCustom07Description</Description>
+        <Icons>
+            <Icon Size="Small" Path="Bitmaps\Atlased\Categories\CategoryPlanetImprovementSmall" />
+        </Icons>
+    </GuiElement>
+
+    <GuiElement Name="FactionTraitHomePlanetPlanetTypeCustom08">
+        <Title>%FactionTraitHomePlanetPlanetTypeCustom08Title</Title>
+        <Description>%FactionTraitHomePlanetPlanetTypeCustom08Description</Description>
+        <Icons>
+            <Icon Size="Small" Path="Bitmaps\Atlased\Categories\CategoryPlanetImprovementSmall" />
+        </Icons>
+    </GuiElement>
+
+</Datatable>

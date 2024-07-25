@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Documentation/Schemas/PopulationEventDefinition.xsd">
+
+<!--What politics get promoted when you colonize this planet-->
+<!--Gas Fertile-->
+  <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventColonizationGasFertile" Category="PoliticalEventColonization" Scale="System" Duration="10" Power="0">
+    <Politics Name="Politics04"/>
+  </PopulationPoliticalEventDefinition>
+
+<!--Gas Overgrown-->
+  <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventColonizationGasOvergrown" Category="PoliticalEventColonization" Scale="System" Duration="10" Power="0">
+    <Politics Name="Politics04"/>
+  </PopulationPoliticalEventDefinition>
+
+<!--Gas Dwarf-->
+  <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventColonizationGasDwarf" Category="PoliticalEventColonization" Scale="System" Duration="10" Power="0">
+    <Politics Name="Politics02"/>
+  </PopulationPoliticalEventDefinition>
+
+<!--Gas Chilly-->
+  <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventColonizationGasChilly" Category="PoliticalEventColonization" Scale="System" Duration="10" Power="0">
+    <Politics Name="Politics02"/>
+  </PopulationPoliticalEventDefinition>
+
+<!--City-->
+  <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventColonizationCityPlanet" Category="PoliticalEventColonization" Scale="System" Duration="10" Power="0">
+    <Politics Name="Politics01"/>
+  </PopulationPoliticalEventDefinition>
+
+<!--Farm-->
+  <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventColonizationFarmPlanet" Category="PoliticalEventColonization" Scale="System" Duration="10" Power="0">
+    <Politics Name="Politics04"/>
+  </PopulationPoliticalEventDefinition>
+
+<!--Garbage-->
+  <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventColonizationGarbagePlanet" Category="PoliticalEventColonization" Scale="System" Duration="10" Power="0">
+    <Politics Name="Politics01"/>
+  </PopulationPoliticalEventDefinition>
+
+<!--Polluted-->
+  <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventColonizationPollutedPlanet" Category="PoliticalEventColonization" Scale="System" Duration="10" Power="0">
+    <Politics Name="Politics01"/>
+  </PopulationPoliticalEventDefinition>
+
+</Datatable>

@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Gui.GuiElement.xsd">
+
+<!--Gas Fertile-->
+    <ExtendedGuiElement Name="PlanetTypeCustom01">
+        <Title>%PlanetTypeCustom01Title</Title>
+        <Description>%PlanetTypeCustom01Description</Description>
+        <Icons>
+            <Icon Size="Small" Path="PlanetType"/>
+            <Icon Size="Large" Path="Bitmaps/Dynamic/Planets/PlanetTypeGasTemperateLarge"/>
+            <Icon Size="Planetoid" Path="Bitmaps/Dynamic/Planets/PlanetTypeGasWaterCloudsPlanetoid"/>
+        </Icons>
+        <Movies>
+            <Movie Path="Movies/Colonization/GasTemperate.mp4" Type="Default" />
+        </Movies>
+    </ExtendedGuiElement>
+
+<!--Gas Overgrown-->
+    <ExtendedGuiElement Name="PlanetTypeCustom02">
+        <Title>%PlanetTypeCustom02Title</Title>
+        <Description>%PlanetTypeCustom02Description</Description>
+        <Icons>
+            <Icon Size="Small" Path="PlanetType"/>
+            <Icon Size="Large" Path="Bitmaps/Dynamic/Planets/PlanetTypeGasTemperateLarge"/>
+            <Icon Size="Planetoid" Path="Bitmaps/Dynamic/Planets/PlanetTypeGasWaterCloudsPlanetoid"/>
+        </Icons>
+        <Movies>
+            <Movie Path="Movies/Colonization/GasTemperate.mp4" Type="Default" />
+        </Movies>
+    </ExtendedGuiElement>
+
+<!--Gas Dwarf-->
+    <ExtendedGuiElement Name="PlanetTypeCustom03">
+        <Title>%PlanetTypeCustom03Title</Title>
+        <Description>%PlanetTypeCustom03Description</Description>
+        <Icons>
+            <Icon Size="Small" Path="PlanetType"/>
+            <Icon Size="Large" Path="Bitmaps/Dynamic/Planets/PlanetTypeGasTemperateLarge"/>
+            <Icon Size="Planetoid" Path="Bitmaps/Dynamic/Planets/PlanetTypeGasWaterCloudsPlanetoid"/>
+        </Icons>
+        <Movies>
+            <Movie Path="Movies/Colonization/GasCold.mp4" Type="Default" />
+        </Movies>
+    </ExtendedGuiElement>
+
+<!--Gas Chilly-->
+    <ExtendedGuiElement Name="PlanetTypeCustom04">
+        <Title>%PlanetTypeCustom04Title</Title>
+        <Description>%PlanetTypeCustom04Description</Description>
+        <Icons>
+            <Icon Size="Small" Path="PlanetType"/>
+            <Icon Size="Large" Path="Bitmaps/Dynamic/Planets/PlanetTypeGasTemperateLarge"/>
+            <Icon Size="Planetoid" Path="Bitmaps/Dynamic/Planets/PlanetTypeGasWaterCloudsPlanetoid"/>
+        </Icons>
+        <Movies>
+            <Movie Path="Movies/Colonization/GasCold.mp4" Type="Default" />
+        </Movies>
+    </ExtendedGuiElement>
+
+<!--City-->
+    <ExtendedGuiElement Name="PlanetTypeCustom05">
+        <Title>%PlanetTypeCustom05Title</Title>
+        <Description>%PlanetTypeCustom05Description</Description>
+        <Icons>
+            <Icon Size="Small" Path="PlanetType"/>
+            <Icon Size="Large" Path="Textures/CityPlanetLarge"/>
+            <Icon Size="Planetoid" Path="Bitmaps/Dynamic/Planets/PlanetTypeUniqueMezanPlanetoid"/>
+        </Icons>
+        <Movies>
+            <Movie Path="Movies/Colonization/Terran.mp4" Type="Default" />
+        </Movies>
+    </ExtendedGuiElement>
+
+<!--Farm-->
+    <ExtendedGuiElement Name="PlanetTypeCustom06">
+        <Title>%PlanetTypeCustom06Title</Title>
+        <Description>%PlanetTypeCustom06Description</Description>
+        <Icons>
+            <Icon Size="Small" Path="PlanetType"/>
+            <Icon Size="Large" Path="Textures/FarmPlanetLarge"/>
+            <Icon Size="Planetoid" Path="Bitmaps/Dynamic/Planets/PlanetTypeUniqueSaharPlanetoid"/>
+        </Icons>
+        <Movies>
+            <Movie Path="Movies/Colonization/Steppe.mp4" Type="Default" />
+        </Movies>
+    </ExtendedGuiElement>
+
+<!--Garbage-->
+    <ExtendedGuiElement Name="PlanetTypeCustom07">
+        <Title>%PlanetTypeCustom07Title</Title>
+        <Description>%PlanetTypeCustom07Description</Description>
+        <Icons>
+            <Icon Size="Small" Path="PlanetType"/>
+            <Icon Size="Large" Path="Textures/GarbagePlanetLarge"/>
+            <Icon Size="Planetoid" Path="Bitmaps/Dynamic/Planets/PlanetTypeHomeWorldMajorHisshosPlanetoid"/>
+        </Icons>
+        <Movies>
+            <Movie Path="Movies/Colonization/Swamp.mp4" Type="Default" />
+        </Movies>
+    </ExtendedGuiElement>
+
+<!--Polluted-->
+    <ExtendedGuiElement Name="PlanetTypeCustom08">
+        <Title>%PlanetTypeCustom08Title</Title>
+        <Description>%PlanetTypeCustom08Description</Description>
+        <Icons>
+            <Icon Size="Small" Path="PlanetType"/>
+            <Icon Size="Large" Path="Textures/PollutedPlanetLarge"/>
+            <Icon Size="Planetoid" Path="Bitmaps/Dynamic/Planets/PlanetTypeSwampPlanetoid"/>
+        </Icons>
+        <Movies>
+            <Movie Path="Movies/Colonization/Swamp.mp4" Type="Default" />
+        </Movies>
+    </ExtendedGuiElement>
+</Datatable>

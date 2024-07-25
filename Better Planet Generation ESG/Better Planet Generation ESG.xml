@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="Documentation/Schemas/Amplitude.Unity.Runtime.RuntimeModule.xsd">
+  <RuntimeModule Name="BetterPlanetGenerationESG" Type="Extension" Version="1.2">
+    <Title>Better Planet Generation ESG</Title>
+    <Description>This is the ESG version of this mod.
+This mod Improves the galaxy generation to be more varied and realistic.
+Changes:
+-8 new planet types.
+-1 and 2 planet systems dont exist.
+-Stars have had their planet generation changed slightly and now obey this temperature chart:
+Red Supergiant (Hottest)
+Blue Star
+Double Star
+Yellow Star
+White star (middle in term of temperature)
+Dyson Sphere
+Red Dwarf
+Protostar
+White Dwarf (Coldest)
+-Artificial Stars now tend towards habitable planets and are rarer.
+-All planet types can now spawn on all star types but the chances of say a lava planet on a white dwarf are very low (0.5%).
+-The different gas giants now have different spawn chances depending on the star instead of it always being the same (colder gasses spawn more often on colder stars and vice versa).
+
+Changes that exist here but have also been incorporated into ESG:
+-Starless systems now have multiple planets as well as non gas giant planets (ice, ash, lava and barren).
+-Minors now have more than one planet in their spawn pool.
+-Starting star of some factions have been changed:
+Sophon from blue star to red dwarf
+Riftborn from blue star to white dwarf
+Hissho from blue star to Dyson sphere
+Nakalim from "blue" star to artificial star
+-There's a small chance your home star is another type of star from the default (if you don't have ESGs balanced home on).
+
+Changes that don't seem to quite work (sorry):
+-The academy always has 5 planets (which is actually 4 cuz, you know).
+-Old young and normal galaxy ages have more realistic and more different generation.
+-More galaxy age options
+    </Description>
+
+    <Author>Tat011</Author>
+    <Homepage>https://steamcommunity.com/sharedfiles/filedetails/?id=2789073737</Homepage>
+    <PreviewImageFile>ModIcon.png</PreviewImageFile>
+    <ReleaseNotes>Initial release.</ReleaseNotes>
+    <Tags>Gameplay</Tags>
+		<!-- To check what plugins are valid, and the order in which they need to go, check the Documentation/Endless_Space_2.xml file -->
+    <Plugins>
+			<DatabasePlugin DataType="PlanetRemappingDefinition, Assembly-CSharp">
+				<FilePath>Mapping/PlanetRemappingDefinitions.xml</FilePath>
+			</DatabasePlugin>
+
+     <DatabasePlugin DataType="GalaxyGeneratorWeightTableDefinition, Assembly-CSharp">
+       <FilePath>GalaxyGenerator/WeightTableDefinitions.xml</FilePath>
+     </DatabasePlugin>
+
+       <DatabasePlugin DataType="Amplitude.Unity.Simulation.SimulationDescriptor, Assembly-CSharp-firstpass">
+           <FilePath>Simulation/SimulationDescriptors[*].xml</FilePath>
+       </DatabasePlugin>
+       
+     <DatabasePlugin DataType="Generator.Definitions.PlanetGameplayTypeDefinition, Assembly-CSharp-firstpass">
+       <FilePath>GalaxyGenerator/PlanetGameplayTypeDefinitions.xml</FilePath>
+     </DatabasePlugin>
+
+     <DatabasePlugin DataType="Generator.Definitions.PlanetTemperatureDefinition, Assembly-CSharp-firstpass">
+       <FilePath>GalaxyGenerator/PlanetTemperatureDefinitions.xml</FilePath>
+     </DatabasePlugin>
+
+     <DatabasePlugin DataType="IndustryConstructibleElement, Assembly-CSharp">
+       <ExtraTypes>
+         <ExtraType DataType="PlanetColonizationConstructibleElement, Assembly-CSharp" />
+       </ExtraTypes>
+       <FilePath>Simulation/ConstructibleElement_Industry[*].xml</FilePath>
+     </DatabasePlugin>
+
+      <DatabasePlugin DataType="PlanetColonizationConstructibleElement, Assembly-CSharp">
+        <FilePath>Simulation/ConstructibleElement_Industry[*].xml</FilePath>
+      </DatabasePlugin>
+
+			<DatabasePlugin DataType="ScienceConstructibleElement, Assembly-CSharp">
+				<ExtraTypes>
+					<ExtraType DataType="TechnologyDefinition, Assembly-CSharp" />
+				</ExtraTypes>
+				<FilePath>Simulation/ConstructibleElement_Science[*].xml</FilePath>
+			</DatabasePlugin>
+
+      <DatabasePlugin DataType="TechnologyHelperVariableDefinition, Assembly-CSharp">
+          <FilePath>Simulation/TechnologyHelperVariableDefinitions.xml</FilePath>
+      </DatabasePlugin>
+
+      <DatabasePlugin DataType="Amplitude.Unity.Gui.GuiElement, Assembly-CSharp-firstpass">
+       <ExtraTypes>
+         <ExtraType DataType="Amplitude.Unity.Gui.ExtendedGuiElement, Assembly-CSharp-firstpass" />
+         <ExtraType DataType="AffinityGuiElement, Assembly-CSharp" />
+       </ExtraTypes>
+       <FilePath>Gui/GuiElements[*].xml</FilePath>
+      </DatabasePlugin> 
+         
+      <DatabasePlugin DataType="GuiPlanetTypeBaseStats, Assembly-CSharp">
+       <FilePath>Gui/GuiPlanetTypeBaseStats.xml</FilePath>
+      </DatabasePlugin>
+
+      <!-- Faction Traits -->
+			<DatabasePlugin DataType="FactionTrait, Assembly-CSharp" Priority="20">
+				<ExtraTypes>
+					<ExtraType DataType="FactionAffinity, Assembly-CSharp" />
+					<ExtraType DataType="FactionAffinityMapping, Assembly-CSharp" />
+					<ExtraType DataType="FactionPopulationTrait, Assembly-CSharp" />
+				</ExtraTypes>
+				<FilePath>Simulation/FactionTraits.xml</FilePath>
+				<FilePath>Simulation/FactionTraits[*].xml</FilePath>
+			</DatabasePlugin>
+
+			<DatabasePlugin DataType="FactionAffinity, Assembly-CSharp">
+				<FilePath>Simulation/FactionTraits[*].xml</FilePath>
+			</DatabasePlugin>
+
+			<DatabasePlugin DataType="FactionAffinityMapping, Assembly-CSharp">
+				<FilePath>Simulation/FactionTraits[*].xml</FilePath>
+			</DatabasePlugin>
+
+			<DatabasePlugin DataType="FactionTraitCategoryDefinition, Assembly-CSharp">
+				<FilePath>Simulation/FactionTraitCategoryDefinitions.xml</FilePath>
+			</DatabasePlugin>
+
+      <DatabasePlugin DataType="PlanetImprovementMappingDefinition, Assembly-CSharp">
+       <FilePath>MinorFactions/PlanetImprovementMappingDefinitions.xml</FilePath>
+      </DatabasePlugin>
+
+      <DatabasePlugin DataType="PopulationEventDefinition, Assembly-CSharp">
+       <ExtraTypes>
+         <ExtraType DataType="PopulationPoliticalEventDefinition, Assembly-CSharp" />
+       </ExtraTypes>
+       <FilePath>Simulation/PopulationPoliticalEventDefinitions.xml</FilePath>
+      </DatabasePlugin>
+
+			<DatabasePlugin DataType="GameSettingDefinition, Assembly-CSharp">
+				<ExtraTypes>
+					<ExtraType DataType="WorldSettingDefinition, Assembly-CSharp" />
+				</ExtraTypes>
+				<FilePath>Settings/GameSettingDefinitions.xml</FilePath>
+				<FilePath>Settings/WorldSettingDefinitions.xml</FilePath>
+			</DatabasePlugin>
+      
+     <LocalizationPlugin DefaultLanguage="english">
+	    	<Directory>Localization</Directory>
+	 	 </LocalizationPlugin>
+		</Plugins>
+	</RuntimeModule>
+</Datatable>

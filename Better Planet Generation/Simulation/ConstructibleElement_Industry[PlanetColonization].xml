@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/IndustryConstructibleElement.xsd">
+<!--Gas Fertile standard colonization-->
+  <PlanetColonizationConstructibleElement Name="PlanetTypeCustom01Colonization" Category="CategoryPlanetColonization" SubCategory="PlanetColonization" PlanetType="PlanetTypeCustom01">
+    <InProgressSimulationDescriptorReference Name="PlanetStatusBeingColonized"/>
+    <Cost ResourceName="SystemProduction">640</Cost>
+    <PathPrerequisite Flags="Prerequisite,Faction">../ClassEmpire,!AffinityGameplayUnfallen</PathPrerequisite>
+    <MetaPrerequisite Operator="Or">
+      <TechnologyPrerequisite Flags="Prerequisite,Technology" UnlockHidden="true">TechnologyColonizationGasPlanet</TechnologyPrerequisite>
+      <PathPrerequisite Flags="Prerequisite">../ClassEmpire,EmpireTypeMinor</PathPrerequisite>
+      <PathPrerequisite Flags="Prerequisite">../ClassEmpire,EmpireTypeAcademy</PathPrerequisite>
+    </MetaPrerequisite>
+    <PopulationEvent Name="PopulationPoliticalEventColonizationGasFertile"/>
+  </PlanetColonizationConstructibleElement>
+
+<!--Gas Fertile Unfallen colonization-->
+  <PlanetColonizationConstructibleElement Name="PlanetTypeCustom01RootColonization" Category="CategoryPlanetColonization" SubCategory="PlanetColonization" PlanetType="PlanetTypeCustom01">
+    <Tags>NoBuyout</Tags>
+    <InProgressSimulationDescriptorReference Name="PlanetStatusBeingColonized"/>
+    <Cost ResourceName="SystemTurnBased">4</Cost>
+    <PathPrerequisite Flags="Prerequisite,Faction">../ClassEmpire,AffinityGameplayUnfallen</PathPrerequisite>
+    <TechnologyPrerequisite Flags="Prerequisite,Technology" UnlockHidden="true">TechnologyColonizationGasPlanet</TechnologyPrerequisite>
+    <PopulationEvent Name="PopulationPoliticalEventColonizationGasFertile"/>
+  </PlanetColonizationConstructibleElement>
+
+<!--Gas Overgrown standard colonization-->
+  <PlanetColonizationConstructibleElement Name="PlanetTypeCustom02Colonization" Category="CategoryPlanetColonization" SubCategory="PlanetColonization" PlanetType="PlanetTypeCustom02">
+    <InProgressSimulationDescriptorReference Name="PlanetStatusBeingColonized"/>
+    <Cost ResourceName="SystemProduction">640</Cost>
+    <PathPrerequisite Flags="Prerequisite,Faction">../ClassEmpire,!AffinityGameplayUnfallen</PathPrerequisite>
+    <MetaPrerequisite Operator="Or">
+      <TechnologyPrerequisite Flags="Prerequisite,Technology" UnlockHidden="true">TechnologyColonizationGasPlanet</TechnologyPrerequisite>
+      <PathPrerequisite Flags="Prerequisite">../ClassEmpire,EmpireTypeMinor</PathPrerequisite>
+      <PathPrerequisite Flags="Prerequisite">../ClassEmpire,EmpireTypeAcademy</PathPrerequisite>
+    </MetaPrerequisite>
+    <PopulationEvent Name="PopulationPoliticalEventColonizationGasOvergrown"/>
+  </PlanetColonizationConstructibleElement>
+
+<!--Gas Overgrown Unfallen colonization-->
+  <PlanetColonizationConstructibleElement Name="PlanetTypeCustom02RootColonization" Category="CategoryPlanetColonization" SubCategory="PlanetColonization" PlanetType="PlanetTypeCustom02">
+    <Tags>NoBuyout</Tags>
+    <InProgressSimulationDescriptorReference Name="PlanetStatusBeingColonized"/>
+    <Cost ResourceName="SystemTurnBased">4</Cost>
+    <PathPrerequisite Flags="Prerequisite,Faction">../ClassEmpire,AffinityGameplayUnfallen</PathPrerequisite>
+    <TechnologyPrerequisite Flags="Prerequisite,Technology" UnlockHidden="true">TechnologyColonizationGasPlanet</TechnologyPrerequisite>
+    <PopulationEvent Name="PopulationPoliticalEventColonizationGasOvergrown"/>
+  </PlanetColonizationConstructibleElement>
+
+<!--Gas Dwarf standard colonization-->
+  <PlanetColonizationConstructibleElement Name="PlanetTypeCustom03Colonization" Category="CategoryPlanetColonization" SubCategory="PlanetColonization" PlanetType="PlanetTypeCustom03">
+    <InProgressSimulationDescriptorReference Name="PlanetStatusBeingColonized"/>
+    <Cost ResourceName="SystemProduction">640</Cost>
+    <PathPrerequisite Flags="Prerequisite,Faction">../ClassEmpire,!AffinityGameplayUnfallen</PathPrerequisite>
+    <MetaPrerequisite Operator="Or">
+      <TechnologyPrerequisite Flags="Prerequisite,Technology" UnlockHidden="true">TechnologyColonizationGasPlanet</TechnologyPrerequisite>
+      <PathPrerequisite Flags="Prerequisite">../ClassEmpire,EmpireTypeMinor</PathPrerequisite>
+      <PathPrerequisite Flags="Prerequisite">../ClassEmpire,EmpireTypeAcademy</PathPrerequisite>
+    </MetaPrerequisite>
+    <PopulationEvent Name="PopulationPoliticalEventColonizationGasDwarf"/>
+  </PlanetColonizationConstructibleElement>
+
+<!--Gas Dwarf Unfallen colonization-->
+  <PlanetColonizationConstructibleElement Name="PlanetTypeCustom03RootColonization" Category="CategoryPlanetColonization" SubCategory="PlanetColonization" PlanetType="PlanetTypeCustom03">
+    <Tags>NoBuyout</Tags>
+    <InProgressSimulationDescriptorReference Name="PlanetStatusBeingColonized"/>
+    <Cost ResourceName="SystemTurnBased">4</Cost>
+    <PathPrerequisite Flags="Prerequisite,Faction">../ClassEmpire,AffinityGameplayUnfallen</PathPrerequisite>
+    <TechnologyPrerequisite Flags="Prerequisite,Technology" UnlockHidden="true">TechnologyColonizationGasPlanet</TechnologyPrerequisite>
+    <PopulationEvent Name="PopulationPoliticalEventColonizationGasDwarf"/>
+  </PlanetColonizationConstructibleElement>
+
+<!--Gas Chilly standard colonization-->
+  <PlanetColonizationConstructibleElement Name="PlanetTypeCustom04Colonization" Category="CategoryPlanetColonization" SubCategory="PlanetColonization" PlanetType="PlanetTypeCustom04">
+    <InProgressSimulationDescriptorReference Name="PlanetStatusBeingColonized"/>
+    <Cost ResourceName="SystemProduction">640</Cost>
+    <PathPrerequisite Flags="Prerequisite,Faction">../ClassEmpire,!AffinityGameplayUnfallen</PathPrerequisite>
+    <MetaPrerequisite Operator="Or">
+      <TechnologyPrerequisite Flags="Prerequisite,Technology" UnlockHidden="true">TechnologyColonizationGasPlanet</TechnologyPrerequisite>
+      <PathPrerequisite Flags="Prerequisite">../ClassEmpire,EmpireTypeMinor</PathPrerequisite>
+      <PathPrerequisite Flags="Prerequisite">../ClassEmpire,EmpireTypeAcademy</PathPrerequisite>
+    </MetaPrerequisite>
+    <PopulationEvent Name="PopulationPoliticalEventColonizationGasChilly"/>
+  </PlanetColonizationConstructibleElement>
+
+<!--Gas Chilly Unfallen colonization-->
+  <PlanetColonizationConstructibleElement Name="PlanetTypeCustom04RootColonization" Category="CategoryPlanetColonization" SubCategory="PlanetColonization" PlanetType="PlanetTypeCustom04">
+    <Tags>NoBuyout</Tags>
+    <InProgressSimulationDescriptorReference Name="PlanetStatusBeingColonized"/>
+    <Cost ResourceName="SystemTurnBased">4</Cost>
+    <PathPrerequisite Flags="Prerequisite,Faction">../ClassEmpire,AffinityGameplayUnfallen</PathPrerequisite>
+    <TechnologyPrerequisite Flags="Prerequisite,Technology" UnlockHidden="true">TechnologyColonizationGasPlanet</TechnologyPrerequisite>
+    <PopulationEvent Name="PopulationPoliticalEventColonizationGasChilly"/>
+  </PlanetColonizationConstructibleElement>
+
+<!--City standard colonization-->
+  <PlanetColonizationConstructibleElement Name="PlanetTypeCustom05Colonization" Category="CategoryPlanetColonization" SubCategory="PlanetColonization" PlanetType="PlanetTypeCustom05">  
+    <InProgressSimulationDescriptorReference Name="PlanetStatusBeingColonized"/>
+    <Cost ResourceName="SystemProduction">200</Cost>
+    <PathPrerequisite Flags="Prerequisite,Faction">../ClassEmpire,!AffinityGameplayUnfallen</PathPrerequisite>
+    <MetaPrerequisite Operator="Or">
+      <TechnologyPrerequisite Flags="Prerequisite,Technology">TechnologyColonizationCityPlanet</TechnologyPrerequisite>
+      <PathPrerequisite Flags="Prerequisite">../ClassEmpire,FactionTraitHomePlanetPlanetTypeCustom05</PathPrerequisite>
+      <PathPrerequisite Flags="Prerequisite">../ClassEmpire/ClassSenate/LawEffectP04L00</PathPrerequisite>
+      <PathPrerequisite Flags="Prerequisite">../ClassEmpire/ClassSenate/LawEffectP04L00Republic</PathPrerequisite>
+      <PathPrerequisite Flags="Prerequisite">../ClassEmpire/ClassSenate/LawEffectP04L00Dictatorship</PathPrerequisite>
+      <PathPrerequisite Flags="Prerequisite">../ClassEmpire/ClassSenate/LawEffectP04L00DictatorshipMajorHisshos</PathPrerequisite>
+      <PathPrerequisite Flags="Prerequisite">../ClassEmpire,EmpireTypeMinor</PathPrerequisite>
+      <PathPrerequisite Flags="Prerequisite">../ClassEmpire,EmpireTypeAcademy</PathPrerequisite>
+    </MetaPrerequisite>
+    <PopulationEvent Name="PopulationPoliticalEventColonizationCityPlanet"/>
+  </PlanetColonizationConstructibleElement>
+
+<!--City Unfallen colonization-->
+  <PlanetColonizationConstructibleElement Name="PlanetTypeCustom05RootColonization" Category="CategoryPlanetColonization" SubCategory="PlanetColonization" PlanetType="PlanetTypeCustom05">
+    <Tags>NoBuyout</Tags>
+    <InProgressSimulationDescriptorReference Name="PlanetStatusBeingColonized"/>
+    <Cost ResourceName="SystemTurnBased">1</Cost>
+    <PathPrerequisite Flags="Prerequisite,Faction">../ClassEmpire,AffinityGameplayUnfallen</PathPrerequisite>
+    <MetaPrerequisite Operator="Or">
+      <TechnologyPrerequisite Flags="Prerequisite,Technology">TechnologyColonizationCityPlanetUnfallen</TechnologyPrerequisite>
+      <PathPrerequisite Flags="Prerequisite">../ClassEmpire/ClassSenate/LawEffectP04L00</PathPrerequisite>
+      <PathPrerequisite Flags="Prerequisite">../ClassEmpire/ClassSenate/LawEffectP04L00Republic</PathPrerequisite>
+      <PathPrerequisite Flags="Prerequisite">../ClassEmpire/ClassSenate/LawEffectP04L00Dictatorship</PathPrerequisite>
+      <PathPrerequisite Flags="Prerequisite">../ClassEmpire/ClassSenate/LawEffectP04L00DictatorshipMajorHisshos</PathPrerequisite>
+    </MetaPrerequisite>  
+    <PopulationEvent Name="PopulationPoliticalEventColonizationCityPlanet"/>
+  </PlanetColonizationConstructibleElement>
+
+<!--Farm standard colonization-->
+  <PlanetColonizationConstructibleElement Name="PlanetTypeCustom06Colonization" Category="CategoryPlanetColonization" SubCategory="PlanetColonization" PlanetType="PlanetTypeCustom06">  
+    <InProgressSimulationDescriptorReference Name="PlanetStatusBeingColonized"/>
+    <Cost ResourceName="SystemProduction">125</Cost>
+    <PathPrerequisite Flags="Prerequisite,Faction">../ClassEmpire,!AffinityGameplayUnfallen</PathPrerequisite>
+    <MetaPrerequisite Operator="Or">
+      <TechnologyPrerequisite Flags="Prerequisite,Technology">TechnologyColonizationFarmPlanet</TechnologyPrerequisite>
+      <PathPrerequisite Flags="Prerequisite">../ClassEmpire,FactionTraitHomePlanetPlanetTypeCustom06</PathPrerequisite>
+      <PathPrerequisite Flags="Prerequisite">../ClassEmpire/ClassSenate/LawEffectP04L00</PathPrerequisite>
+      <PathPrerequisite Flags="Prerequisite">../ClassEmpire/ClassSenate/LawEffectP04L00Republic</PathPrerequisite>
+      <PathPrerequisite Flags="Prerequisite">../ClassEmpire/ClassSenate/LawEffectP04L00Dictatorship</PathPrerequisite>
+      <PathPrerequisite Flags="Prerequisite">../ClassEmpire/ClassSenate/LawEffectP04L00DictatorshipMajorHisshos</PathPrerequisite>
+      <PathPrerequisite Flags="Prerequisite">../ClassEmpire,EmpireTypeMinor</PathPrerequisite>
+      <PathPrerequisite Flags="Prerequisite">../ClassEmpire,EmpireTypeAcademy</PathPrerequisite>
+    </MetaPrerequisite>
+    <PopulationEvent Name="PopulationPoliticalEventColonizationFarmPlanet"/>
+  </PlanetColonizationConstructibleElement>
+
+<!--Farm Unfallen colonization-->
+  <PlanetColonizationConstructibleElement Name="PlanetTypeCustom06RootColonization" Category="CategoryPlanetColonization" SubCategory="PlanetColonization" PlanetType="PlanetTypeCustom06">
+    <Tags>NoBuyout</Tags>
+    <InProgressSimulationDescriptorReference Name="PlanetStatusBeingColonized"/>
+    <Cost ResourceName="SystemTurnBased">1</Cost>
+    <PathPrerequisite Flags="Prerequisite,Faction">../ClassEmpire,AffinityGameplayUnfallen</PathPrerequisite>
+    <MetaPrerequisite Operator="Or">
+      <TechnologyPrerequisite Flags="Prerequisite,Technology">TechnologyColonizationFarmPlanetUnfallen</TechnologyPrerequisite>
+      <PathPrerequisite Flags="Prerequisite">../ClassEmpire/ClassSenate/LawEffectP04L00</PathPrerequisite>
+      <PathPrerequisite Flags="Prerequisite">../ClassEmpire/ClassSenate/LawEffectP04L00Republic</PathPrerequisite>
+      <PathPrerequisite Flags="Prerequisite">../ClassEmpire/ClassSenate/LawEffectP04L00Dictatorship</PathPrerequisite>
+      <PathPrerequisite Flags="Prerequisite">../ClassEmpire/ClassSenate/LawEffectP04L00DictatorshipMajorHisshos</PathPrerequisite>
+    </MetaPrerequisite>  
+    <PopulationEvent Name="PopulationPoliticalEventColonizationFarmPlanet"/>
+  </PlanetColonizationConstructibleElement>
+
+<!--Garbage standard colonization-->
+  <PlanetColonizationConstructibleElement Name="PlanetTypeCustom07Colonization" Category="CategoryPlanetColonization" SubCategory="PlanetColonization" PlanetType="PlanetTypeCustom07">  
+    <InProgressSimulationDescriptorReference Name="PlanetStatusBeingColonized"/>
+    <Cost ResourceName="SystemProduction">320</Cost>
+    <PathPrerequisite Flags="Prerequisite,Faction">../ClassEmpire,!AffinityGameplayUnfallen</PathPrerequisite>
+    <MetaPrerequisite Operator="Or">
+      <TechnologyPrerequisite Flags="Prerequisite,Technology">TechnologyColonizationGarbagePlanet</TechnologyPrerequisite>
+      <PathPrerequisite Flags="Prerequisite">../ClassEmpire,FactionTraitHomePlanetPlanetTypeCustom07</PathPrerequisite>
+      <PathPrerequisite Flags="Prerequisite">../ClassEmpire/ClassSenate/LawEffectP04L00</PathPrerequisite>
+      <PathPrerequisite Flags="Prerequisite">../ClassEmpire/ClassSenate/LawEffectP04L00Republic</PathPrerequisite>
+      <PathPrerequisite Flags="Prerequisite">../ClassEmpire/ClassSenate/LawEffectP04L00Dictatorship</PathPrerequisite>
+      <PathPrerequisite Flags="Prerequisite">../ClassEmpire/ClassSenate/LawEffectP04L00DictatorshipMajorHisshos</PathPrerequisite>
+      <PathPrerequisite Flags="Prerequisite">../ClassEmpire,EmpireTypeMinor</PathPrerequisite>
+      <PathPrerequisite Flags="Prerequisite">../ClassEmpire,EmpireTypeAcademy</PathPrerequisite>
+    </MetaPrerequisite>  
+    <PopulationEvent Name="PopulationPoliticalEventColonizationGarbagePlanet"/>
+  </PlanetColonizationConstructibleElement>
+
+<!--Garbage Unfallen colonization-->
+  <PlanetColonizationConstructibleElement Name="PlanetTypeCustom07RootColonization" Category="CategoryPlanetColonization" SubCategory="PlanetColonization" PlanetType="PlanetTypeCustom07">
+    <Tags>NoBuyout</Tags>
+    <InProgressSimulationDescriptorReference Name="PlanetStatusBeingColonized"/>
+    <Cost ResourceName="SystemTurnBased">2</Cost>
+    <PathPrerequisite Flags="Prerequisite,Faction">../ClassEmpire,AffinityGameplayUnfallen</PathPrerequisite>
+    <MetaPrerequisite Operator="Or">
+      <TechnologyPrerequisite Flags="Prerequisite,Technology">TechnologyColonizationGarbagePlanetUnfallen</TechnologyPrerequisite>
+      <PathPrerequisite Flags="Prerequisite">../ClassEmpire/ClassSenate/LawEffectP04L00</PathPrerequisite>
+      <PathPrerequisite Flags="Prerequisite">../ClassEmpire/ClassSenate/LawEffectP04L00Republic</PathPrerequisite>
+      <PathPrerequisite Flags="Prerequisite">../ClassEmpire/ClassSenate/LawEffectP04L00Dictatorship</PathPrerequisite>
+      <PathPrerequisite Flags="Prerequisite">../ClassEmpire/ClassSenate/LawEffectP04L00DictatorshipMajorHisshos</PathPrerequisite>
+    </MetaPrerequisite>  
+    <PopulationEvent Name="PopulationPoliticalEventColonizationGarbagePlanet"/>
+  </PlanetColonizationConstructibleElement>
+
+<!--Polluted standard colonization-->
+  <PlanetColonizationConstructibleElement Name="PlanetTypeCustom08Colonization" Category="CategoryPlanetColonization" SubCategory="PlanetColonization" PlanetType="PlanetTypeCustom08">  
+    <InProgressSimulationDescriptorReference Name="PlanetStatusBeingColonized"/>
+    <Cost ResourceName="SystemProduction">640</Cost>
+    <PathPrerequisite Flags="Prerequisite,Faction">../ClassEmpire,!AffinityGameplayUnfallen</PathPrerequisite>
+    <MetaPrerequisite Operator="Or">
+      <TechnologyPrerequisite Flags="Prerequisite,Technology">TechnologyColonizationPollutedPlanet</TechnologyPrerequisite>
+      <PathPrerequisite Flags="Prerequisite">../ClassEmpire,FactionTraitHomePlanetPlanetTypeCustom08</PathPrerequisite>
+      <PathPrerequisite Flags="Prerequisite">../ClassEmpire/ClassSenate/LawEffectP04L00</PathPrerequisite>
+      <PathPrerequisite Flags="Prerequisite">../ClassEmpire/ClassSenate/LawEffectP04L00Republic</PathPrerequisite>
+      <PathPrerequisite Flags="Prerequisite">../ClassEmpire/ClassSenate/LawEffectP04L00Dictatorship</PathPrerequisite>
+      <PathPrerequisite Flags="Prerequisite">../ClassEmpire/ClassSenate/LawEffectP04L00DictatorshipMajorHisshos</PathPrerequisite>
+      <PathPrerequisite Flags="Prerequisite">../ClassEmpire,EmpireTypeMinor</PathPrerequisite>
+      <PathPrerequisite Flags="Prerequisite">../ClassEmpire,EmpireTypeAcademy</PathPrerequisite>
+    </MetaPrerequisite>  
+    <PopulationEvent Name="PopulationPoliticalEventColonizationPollutedPlanet"/>
+  </PlanetColonizationConstructibleElement>
+
+<!--Polluted Unfallen colonization-->
+  <PlanetColonizationConstructibleElement Name="PlanetTypeCustom08RootColonization" Category="CategoryPlanetColonization" SubCategory="PlanetColonization" PlanetType="PlanetTypeCustom08">
+    <Tags>NoBuyout</Tags>
+    <InProgressSimulationDescriptorReference Name="PlanetStatusBeingColonized"/>
+    <Cost ResourceName="SystemTurnBased">3</Cost>
+    <PathPrerequisite Flags="Prerequisite,Faction">../ClassEmpire,AffinityGameplayUnfallen</PathPrerequisite>
+    <MetaPrerequisite Operator="Or">
+      <TechnologyPrerequisite Flags="Prerequisite,Technology">TechnologyColonizationPollutedPlanetUnfallen</TechnologyPrerequisite>
+      <PathPrerequisite Flags="Prerequisite">../ClassEmpire/ClassSenate/LawEffectP04L00</PathPrerequisite>
+      <PathPrerequisite Flags="Prerequisite">../ClassEmpire/ClassSenate/LawEffectP04L00Republic</PathPrerequisite>
+      <PathPrerequisite Flags="Prerequisite">../ClassEmpire/ClassSenate/LawEffectP04L00Dictatorship</PathPrerequisite>
+      <PathPrerequisite Flags="Prerequisite">../ClassEmpire/ClassSenate/LawEffectP04L00DictatorshipMajorHisshos</PathPrerequisite>
+    </MetaPrerequisite>  
+    <PopulationEvent Name="PopulationPoliticalEventColonizationPollutedPlanet"/>
+  </PlanetColonizationConstructibleElement>
+
+</Datatable>

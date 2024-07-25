@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <LocalizationPair Name="%SettingGalaxyAgeEndlessDescription">Even younger than young, play with what the galaxy must have been like to the endless.</LocalizationPair>
+  <LocalizationPair Name="%SettingGalaxyAgeEndlessTitle">Endless</LocalizationPair>
+
+  <LocalizationPair Name="%SettingGalaxyAgeRealisticDescription">Gives the galaxy a relatively more realistic star distribution, at the expense of gameplay.</LocalizationPair>
+  <LocalizationPair Name="%SettingGalaxyAgeRealisticTitle">Realistic?</LocalizationPair>
+
+  <LocalizationPair Name="%SettingGalaxyAgeDyingDescription">Even older than old, play with a galaxy on its way out.</LocalizationPair>
+  <LocalizationPair Name="%SettingGalaxyAgeDyingTitle">Dying</LocalizationPair>
+
+</Datatable>

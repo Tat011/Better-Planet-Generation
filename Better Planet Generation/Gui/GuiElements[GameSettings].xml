@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Gui.GuiElement.xsd">
+
+    <GuiElement Name="SettingGalaxyAgeEndless">
+        <Title>%SettingGalaxyAgeEndlessTitle</Title>
+        <Description>%SettingGalaxyAgeEndlessDescription</Description>
+    </GuiElement>
+
+    <GuiElement Name="SettingGalaxyAgeRealistic">
+        <Title>%SettingGalaxyAgeRealisticTitle</Title>
+        <Description>%SettingGalaxyAgeRealisticDescription</Description>
+    </GuiElement>
+
+    <GuiElement Name="SettingGalaxyAgeDying">
+        <Title>%SettingGalaxyAgeDyingTitle</Title>
+        <Description>%SettingGalaxyAgeDyingDescription</Description>
+    </GuiElement>
+
+</Datatable>

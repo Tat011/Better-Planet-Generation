@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/PlanetImprovementMappingDefinition.xsd">
+
+    <PlanetImprovementMappingDefinition Name="PlanetTypeCustom01" ImprovementName="PlanetImprovementFood1"/>
+    <PlanetImprovementMappingDefinition Name="PlanetTypeCustom02" ImprovementName="PlanetImprovementFood1"/>
+    <PlanetImprovementMappingDefinition Name="PlanetTypeCustom03" ImprovementName="PlanetImprovementScience1"/>
+    <PlanetImprovementMappingDefinition Name="PlanetTypeCustom04" ImprovementName="PlanetImprovementScience1"/>
+    <PlanetImprovementMappingDefinition Name="PlanetTypeCustom05" ImprovementName="PlanetImprovementIndustry1"/>
+    <PlanetImprovementMappingDefinition Name="PlanetTypeCustom06" ImprovementName="PlanetImprovementFood1"/>
+    <PlanetImprovementMappingDefinition Name="PlanetTypeCustom07" ImprovementName="PlanetImprovementIndustry1"/>
+    <PlanetImprovementMappingDefinition Name="PlanetTypeCustom08" ImprovementName="PlanetImprovementIndustry1"/>
+</Datatable>

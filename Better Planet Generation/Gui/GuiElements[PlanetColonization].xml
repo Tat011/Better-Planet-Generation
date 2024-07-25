@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Gui.GuiElement.xsd">
+<!--Standard colonization-->
+    <GuiElement Name="PlanetTypeCustom01Colonization">
+        <Title>%PlanetColonizationCustom01Title</Title>
+        <Description>%PlanetColonizationCustom01Description</Description>
+        <Icons>
+            <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationGasTemperateSmall" />
+            <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationGasTemperateLarge" />
+        </Icons>
+    </GuiElement>
+
+    <GuiElement Name="PlanetTypeCustom02Colonization">
+        <Title>%PlanetColonizationCustom02Title</Title>
+        <Description>%PlanetColonizationCustom02Description</Description>
+        <Icons>
+            <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationGasTemperateSmall" />
+            <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationGasTemperateLarge" />
+        </Icons>
+    </GuiElement>
+
+    <GuiElement Name="PlanetTypeCustom03Colonization">
+        <Title>%PlanetColonizationCustom03Title</Title>
+        <Description>%PlanetColonizationCustom03Description</Description>
+        <Icons>
+            <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationGasTemperateSmall" />
+            <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationGasTemperateLarge" />
+        </Icons>
+    </GuiElement>
+
+    <GuiElement Name="PlanetTypeCustom04Colonization">
+        <Title>%PlanetColonizationCustom04Title</Title>
+        <Description>%PlanetColonizationCustom04Description</Description>
+        <Icons>
+            <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationGasTemperateSmall" />
+            <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationGasTemperateLarge" />
+        </Icons>
+    </GuiElement>
+
+    <GuiElement Name="PlanetTypeCustom05Colonization">
+        <Title>%PlanetColonizationCustom05Title</Title>
+        <Description>%PlanetColonizationCustom05Description</Description>
+        <Icons>
+            <Icon Size="Small" Path="Textures/CityPlanetSmall" />
+            <Icon Size="Large" Path="Textures/CityPlanetLarge" />
+        </Icons>
+    </GuiElement>
+
+    <GuiElement Name="PlanetTypeCustom06Colonization">
+        <Title>%PlanetColonizationCustom06Title</Title>
+        <Description>%PlanetColonizationCustom06Description</Description>
+        <Icons>
+            <Icon Size="Small" Path="Textures/FarmPlanetSmall" />
+            <Icon Size="Large" Path="Textures/FarmPlanetLarge" />
+        </Icons>
+    </GuiElement>
+
+    <GuiElement Name="PlanetTypeCustom07Colonization">
+        <Title>%PlanetColonizationCustom07Title</Title>
+        <Description>%PlanetColonizationCustom07Description</Description>
+        <Icons>
+            <Icon Size="Small" Path="Textures/GarbagePlanetSmall" />
+            <Icon Size="Large" Path="Textures/GarbagePlanetLarge" />
+        </Icons>
+    </GuiElement>
+
+    <GuiElement Name="PlanetTypeCustom08Colonization">
+        <Title>%PlanetColonizationCustom08Title</Title>
+        <Description>%PlanetColonizationCustom08Description</Description>
+        <Icons>
+            <Icon Size="Small" Path="Textures/PollutedPlanetSmall" />
+            <Icon Size="Large" Path="Textures/PollutedPlanetLarge" />
+        </Icons>
+    </GuiElement>
+
+<!--Unfallen colonization-->
+    <GuiElement Name="PlanetTypeCustom01RootColonization">
+        <Title>%PlanetColonizationCustom01Title</Title>
+        <Description>%PlanetColonizationCustom01Description</Description>
+        <Icons>
+            <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationGasTemperateSmall" />
+            <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationGasTemperateLarge" />
+        </Icons>
+    </GuiElement>
+
+    <GuiElement Name="PlanetTypeCustom02RootColonization">
+        <Title>%PlanetColonizationCustom02Title</Title>
+        <Description>%PlanetColonizationCustom02Description</Description>
+        <Icons>
+            <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationGasTemperateSmall" />
+            <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationGasTemperateLarge" />
+        </Icons>
+    </GuiElement>
+
+    <GuiElement Name="PlanetTypeCustom03RootColonization">
+        <Title>%PlanetColonizationCustom03Title</Title>
+        <Description>%PlanetColonizationCustom03Description</Description>
+        <Icons>
+            <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationGasTemperateSmall" />
+            <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationGasTemperateLarge" />
+        </Icons>
+    </GuiElement>
+
+    <GuiElement Name="PlanetTypeCustom04RootColonization">
+        <Title>%PlanetColonizationCustom04Title</Title>
+        <Description>%PlanetColonizationCustom04Description</Description>
+        <Icons>
+            <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationGasTemperateSmall" />
+            <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationGasTemperateLarge" />
+        </Icons>
+    </GuiElement>
+
+    <GuiElement Name="PlanetTypeCustom05RootColonization">
+        <Title>%PlanetColonizationCustom05Title</Title>
+        <Description>%PlanetColonizationCustom05Description</Description>
+        <Icons>
+            <Icon Size="Small" Path="Textures/CityPlanetSmall" />
+            <Icon Size="Large" Path="Textures/CityPlanetLarge" />
+        </Icons>
+    </GuiElement>
+
+    <GuiElement Name="PlanetTypeCustom06RootColonization">
+        <Title>%PlanetColonizationCustom06Title</Title>
+        <Description>%PlanetColonizationCustom06Description</Description>
+        <Icons>
+            <Icon Size="Small" Path="Textures/FarmPlanetSmall" />
+            <Icon Size="Large" Path="Textures/FarmPlanetLarge" />
+        </Icons>
+    </GuiElement>
+
+    <GuiElement Name="PlanetTypeCustom07RootColonization">
+        <Title>%PlanetColonizationCustom07Title</Title>
+        <Description>%PlanetColonizationCustom07Description</Description>
+        <Icons>
+            <Icon Size="Small" Path="Textures/GarbagePlanetSmall" />
+            <Icon Size="Large" Path="Textures/GarbagePlanetLarge" />
+        </Icons>
+    </GuiElement>
+
+    <GuiElement Name="PlanetTypeCustom08RootColonization">
+        <Title>%PlanetColonizationCustom08Title</Title>
+        <Description>%PlanetColonizationCustom08Description</Description>
+        <Icons>
+            <Icon Size="Small" Path="Textures/PollutedPlanetSmall" />
+            <Icon Size="Large" Path="Textures/PollutedPlanetLarge" />
+        </Icons>
+    </GuiElement>
+</Datatable>

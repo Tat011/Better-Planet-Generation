@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/GameSettingDefinition.xsd">
+
+    <WorldSettingDefinition Name="GalaxyAge" Default="Normal">
+        <ItemDefinition Name="Endless">
+            <KeyValuePair Key="GalaxyAgeEndless">1</KeyValuePair>
+            <KeyValuePair Key="GalaxyAgeYoung">0</KeyValuePair>
+            <KeyValuePair Key="GalaxyAgeNormal">0</KeyValuePair>
+            <KeyValuePair Key="GalaxyAgeOld">0</KeyValuePair>
+            <KeyValuePair Key="GalaxyAgeDying">0</KeyValuePair>
+            <KeyValuePair Key="GalaxyAgeRealistic">0</KeyValuePair>
+        </ItemDefinition>
+        <ItemDefinition Name="Young">
+            <KeyValuePair Key="GalaxyAgeEndless">0</KeyValuePair>
+            <KeyValuePair Key="GalaxyAgeYoung">1</KeyValuePair>
+            <KeyValuePair Key="GalaxyAgeNormal">0</KeyValuePair>
+            <KeyValuePair Key="GalaxyAgeOld">0</KeyValuePair>
+            <KeyValuePair Key="GalaxyAgeDying">0</KeyValuePair>
+            <KeyValuePair Key="GalaxyAgeRealistic">0</KeyValuePair> 
+        </ItemDefinition>
+        <ItemDefinition Name="Normal">
+            <KeyValuePair Key="GalaxyAgeEndless">0</KeyValuePair>
+            <KeyValuePair Key="GalaxyAgeYoung">0</KeyValuePair>
+            <KeyValuePair Key="GalaxyAgeNormal">1</KeyValuePair>
+            <KeyValuePair Key="GalaxyAgeOld">0</KeyValuePair>
+            <KeyValuePair Key="GalaxyAgeDying">0</KeyValuePair>
+            <KeyValuePair Key="GalaxyAgeRealistic">0</KeyValuePair>
+        </ItemDefinition>
+        <ItemDefinition Name="Old">
+            <KeyValuePair Key="GalaxyAgeEndless">0</KeyValuePair>
+            <KeyValuePair Key="GalaxyAgeYoung">0</KeyValuePair>
+            <KeyValuePair Key="GalaxyAgeNormal">0</KeyValuePair>
+            <KeyValuePair Key="GalaxyAgeOld">1</KeyValuePair>
+            <KeyValuePair Key="GalaxyAgeDying">0</KeyValuePair>
+            <KeyValuePair Key="GalaxyAgeRealistic">0</KeyValuePair>
+        </ItemDefinition>
+        <ItemDefinition Name="Dying">
+            <KeyValuePair Key="GalaxyAgeEndless">0</KeyValuePair>
+            <KeyValuePair Key="GalaxyAgeYoung">0</KeyValuePair>
+            <KeyValuePair Key="GalaxyAgeNormal">0</KeyValuePair>
+            <KeyValuePair Key="GalaxyAgeOld">0</KeyValuePair>
+            <KeyValuePair Key="GalaxyAgeDying">1</KeyValuePair>
+            <KeyValuePair Key="GalaxyAgeRealistic">0</KeyValuePair>
+        </ItemDefinition>
+        <ItemDefinition Name="Realistic">
+            <KeyValuePair Key="GalaxyAgeEndless">0</KeyValuePair>
+            <KeyValuePair Key="GalaxyAgeYoung">0</KeyValuePair>
+            <KeyValuePair Key="GalaxyAgeNormal">0</KeyValuePair>
+            <KeyValuePair Key="GalaxyAgeOld">0</KeyValuePair>
+            <KeyValuePair Key="GalaxyAgeDying">0</KeyValuePair>
+            <KeyValuePair Key="GalaxyAgeRealistic">1</KeyValuePair>
+        </ItemDefinition>
+        <ItemDefinition Name="Random"/>
+    </WorldSettingDefinition>
+
+</Datatable>

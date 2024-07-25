@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Simulation.SimulationDescriptor.xsd">
+
+  <SimulationDescriptor Name="FactionTraitHomePlanetPlanetTypeCustom01" Type="FactionTrait"/>
+  <SimulationDescriptor Name="FactionTraitHomePlanetPlanetTypeCustom02" Type="FactionTrait"/>
+  <SimulationDescriptor Name="FactionTraitHomePlanetPlanetTypeCustom03" Type="FactionTrait"/>
+  <SimulationDescriptor Name="FactionTraitHomePlanetPlanetTypeCustom04" Type="FactionTrait"/>
+  <SimulationDescriptor Name="FactionTraitHomePlanetPlanetTypeCustom05" Type="FactionTrait"/>
+  <SimulationDescriptor Name="FactionTraitHomePlanetPlanetTypeCustom06" Type="FactionTrait"/>
+  <SimulationDescriptor Name="FactionTraitHomePlanetPlanetTypeCustom07" Type="FactionTrait"/>
+  <SimulationDescriptor Name="FactionTraitHomePlanetPlanetTypeCustom08" Type="FactionTrait"/>
+
+</Datatable>

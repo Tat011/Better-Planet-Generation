@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Generator.Definitions.PlanetTemperatureDefinition.xsd">
+<!--Defines the order the planets are arranged in on a system.
+INT VALUES ONLY
+TIED VALUES ARE ALLOWED
+RANGE WIDTH IS FREE-->
+    <PlanetTemperatureDefinition PlanetType="PlanetTypeGasFrozen"    Temperature="-9"/>
+    <PlanetTemperatureDefinition PlanetType="PlanetTypeGasCold"      Temperature="-8"/>
+    <PlanetTemperatureDefinition PlanetType="PlanetTypeBarren"       Temperature="-7"/>
+    <PlanetTemperatureDefinition PlanetType="PlanetTypeIce"          Temperature="-6"/>
+    <PlanetTemperatureDefinition PlanetType="PlanetTypeArctic"       Temperature="-5"/>
+    <PlanetTemperatureDefinition PlanetType="PlanetTypeSnow"         Temperature="-4"/>
+    <PlanetTemperatureDefinition PlanetType="PlanetTypeTundra"       Temperature="-3"/>
+    <PlanetTemperatureDefinition PlanetType="PlanetTypeBoreal"       Temperature="-2"/>
+    <PlanetTemperatureDefinition PlanetType="PlanetTypeSteppes"      Temperature="-1"/>
+    <PlanetTemperatureDefinition PlanetType="PlanetTypeOcean"        Temperature="-1"/>
+    <PlanetTemperatureDefinition PlanetType="PlanetTypeTerran"       Temperature="0"/>
+    <PlanetTemperatureDefinition PlanetType="PlanetTypeFake"         Temperature="0"/>
+    <PlanetTemperatureDefinition PlanetType="PlanetTypeGasTemperate" Temperature="0"/>
+    <PlanetTemperatureDefinition PlanetType="PlanetTypeMonsoon"      Temperature="0"/>
+    <PlanetTemperatureDefinition PlanetType="PlanetTypeSwamp"        Temperature="0"/>
+    <PlanetTemperatureDefinition PlanetType="PlanetTypeForest"       Temperature="0"/>
+    <PlanetTemperatureDefinition PlanetType="PlanetTypeAtoll"        Temperature="1"/>
+    <PlanetTemperatureDefinition PlanetType="PlanetTypeVeldt"        Temperature="1"/>
+    <PlanetTemperatureDefinition PlanetType="PlanetTypeJungle"       Temperature="2"/>
+    <PlanetTemperatureDefinition PlanetType="PlanetTypeTropical"     Temperature="3"/>
+    <PlanetTemperatureDefinition PlanetType="PlanetTypeArid"         Temperature="4"/>
+    <PlanetTemperatureDefinition PlanetType="PlanetTypeGasWarm"      Temperature="5"/>
+    <PlanetTemperatureDefinition PlanetType="PlanetTypeDesert"       Temperature="5"/>
+    <PlanetTemperatureDefinition PlanetType="PlanetTypeAsh"          Temperature="6"/>
+    <PlanetTemperatureDefinition PlanetType="PlanetTypeLava"         Temperature="7"/>
+    <PlanetTemperatureDefinition PlanetType="PlanetTypeGasHot"       Temperature="8"/>
+    <PlanetTemperatureDefinition PlanetType="PlanetTypeGasBurning"   Temperature="9"/>
+
+    <PlanetTemperatureDefinition PlanetType="PlanetTypeCustom01"        Temperature="0"/>
+    <PlanetTemperatureDefinition PlanetType="PlanetTypeCustom02"        Temperature="0"/>
+    <PlanetTemperatureDefinition PlanetType="PlanetTypeCustom03"        Temperature="0"/>
+    <PlanetTemperatureDefinition PlanetType="PlanetTypeCustom04"        Temperature="-5"/>
+    <PlanetTemperatureDefinition PlanetType="PlanetTypeCustom05"        Temperature="0"/>
+    <PlanetTemperatureDefinition PlanetType="PlanetTypeCustom06"        Temperature="0"/>
+    <PlanetTemperatureDefinition PlanetType="PlanetTypeCustom07"        Temperature="0"/>
+    <PlanetTemperatureDefinition PlanetType="PlanetTypeCustom08"        Temperature="0"/>
+</Datatable>

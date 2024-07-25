@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Documentation/Schemas/Generator.Definitions.PlanetGameplayTypeDefinition.xsd">
+<!--Defines the tags of the planet as well as its tier-->
+<!--Gas Fertile-->
+    <PlanetGameplayTypeDefinition PlanetType="PlanetTypeCustom01">
+        <GameplayType>PlanetGameplayTypeGas</GameplayType>
+        <GameplayType>PlanetGameplayTypeTemperate</GameplayType>
+        <GameplayType>PlanetGameplayTypeTeeming</GameplayType>
+        <GameplayType>PlanetGameplayTier3</GameplayType>
+    </PlanetGameplayTypeDefinition>
+
+<!--Gas Overgrown-->
+    <PlanetGameplayTypeDefinition PlanetType="PlanetTypeCustom02">
+        <GameplayType>PlanetGameplayTypeGas</GameplayType>
+        <GameplayType>PlanetGameplayTypeTemperate</GameplayType>
+        <GameplayType>PlanetGameplayTypeTeeming</GameplayType>
+        <GameplayType>PlanetGameplayTier3</GameplayType>
+    </PlanetGameplayTypeDefinition>
+
+<!--Gas Dwarf-->
+    <PlanetGameplayTypeDefinition PlanetType="PlanetTypeCustom03">
+        <GameplayType>PlanetGameplayTypeGas</GameplayType>
+        <GameplayType>PlanetGameplayTypeTemperate</GameplayType>
+        <GameplayType>PlanetGameplayTier3</GameplayType>
+    </PlanetGameplayTypeDefinition>
+
+<!--Gas Chilly-->
+    <PlanetGameplayTypeDefinition PlanetType="PlanetTypeCustom04">
+        <GameplayType>PlanetGameplayTypeGas</GameplayType>
+        <GameplayType>PlanetGameplayTypeTemperate</GameplayType>
+        <GameplayType>PlanetGameplayTier3</GameplayType>
+    </PlanetGameplayTypeDefinition>
+
+<!--City-->
+    <PlanetGameplayTypeDefinition PlanetType="PlanetTypeCustom05">
+        <GameplayType>PlanetGameplayTypeMeager</GameplayType>
+        <GameplayType>PlanetGameplayTypeTemperate</GameplayType>
+        <GameplayType>PlanetGameplayTier3</GameplayType>
+    </PlanetGameplayTypeDefinition>
+
+<!--Farm-->
+    <PlanetGameplayTypeDefinition PlanetType="PlanetTypeCustom06">
+        <GameplayType>PlanetGameplayTypeTeeming</GameplayType>
+        <GameplayType>PlanetGameplayTypeTemperate</GameplayType>
+        <GameplayType>PlanetGameplayTier3</GameplayType>
+    </PlanetGameplayTypeDefinition>
+
+<!--Garbage-->
+    <PlanetGameplayTypeDefinition PlanetType="PlanetTypeCustom07">
+        <GameplayType>PlanetGameplayTypeMeager</GameplayType>
+        <GameplayType>PlanetGameplayTypeTemperate</GameplayType>
+        <GameplayType>PlanetGameplayTier3</GameplayType>
+    </PlanetGameplayTypeDefinition>
+
+<!--Polluted-->
+    <PlanetGameplayTypeDefinition PlanetType="PlanetTypeCustom08">
+        <GameplayType>PlanetGameplayTypeMeager</GameplayType>
+        <GameplayType>PlanetGameplayTypeTemperate</GameplayType>
+        <GameplayType>PlanetGameplayTier3</GameplayType>
+    </PlanetGameplayTypeDefinition>
+</Datatable>

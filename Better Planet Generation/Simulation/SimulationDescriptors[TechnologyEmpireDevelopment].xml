@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Simulation.SimulationDescriptor.xsd">
+
+    <SimulationDescriptor Name="TechnologyColonizationCityPlanet" Type="Technology" IsSerializable="false">
+        <Modifier TargetProperty="PlanetInitialFIDSPenalty" Operation="Force" Value="0" Path="../ClassEmpire/ClassColonizedStarSystem/PlanetTypeCustom05" TooltipHidden="true"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="TechnologyColonizationFarmPlanet" Type="Technology" IsSerializable="false">
+        <Modifier TargetProperty="PlanetInitialFIDSPenalty" Operation="Force" Value="0" Path="../ClassEmpire/ClassColonizedStarSystem/PlanetTypeCustom06" TooltipHidden="true"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="TechnologyColonizationGarbagePlanet" Type="Technology" IsSerializable="false">
+        <Modifier TargetProperty="PlanetInitialFIDSPenalty" Operation="Force" Value="0" Path="../ClassEmpire/ClassColonizedStarSystem/PlanetTypeCustom07" TooltipHidden="true"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="TechnologyColonizationPollutedPlanet" Type="Technology" IsSerializable="false">
+        <Modifier TargetProperty="PlanetInitialFIDSPenalty" Operation="Force" Value="0" Path="../ClassEmpire/ClassColonizedStarSystem/PlanetTypeCustom08" TooltipHidden="true"/>
+    </SimulationDescriptor>
+
+</Datatable>

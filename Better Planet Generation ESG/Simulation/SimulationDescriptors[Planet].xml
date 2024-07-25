@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Simulation.SimulationDescriptor.xsd">
+<!--This is where FIDSI & Approval stats go-->
+<!--Gas Fertile (1 pop, 30 FIDSI)-->
+  <SimulationDescriptor Name="PlanetTypeCustom01" Type="PlanetType">
+    <Property Name="PlanetClass" BaseValue="4"/>
+    <Modifier TargetProperty="PlanetInitialFoodPerPopulation"         Operation="Addition" Value="15"/>
+    <Modifier TargetProperty="PlanetInitialIndustryPerPopulation"     Operation="Addition" Value="0"/>
+    <Modifier TargetProperty="PlanetInitialDustPerPopulation"         Operation="Addition" Value="15"/>
+    <Modifier TargetProperty="PlanetInitialSciencePerPopulation"      Operation="Addition" Value="0"/>
+    <Modifier TargetProperty="PlanetInitialPrestigePerPopulation"     Operation="Addition" Value="0"/>
+    <BinaryModifier TargetProperty="Happiness" Operation="Addition" Left="-5" BinaryOperation="Multiplication" Right="$(Population)" TooltipHidden="true"/>
+    <Modifier TargetProperty="HappinessRaw" Operation="Addition" Value="-5"/>
+    <Modifier TargetProperty="PlanetIsGasFertile" Operation="Addition" Value="1" Path="ClassColonizedPlanet/ClassPopulation" TooltipHidden="true"/>
+  </SimulationDescriptor>
+
+<!--Gas Overgrown (1 pop, 30 FIDSI)-->
+  <SimulationDescriptor Name="PlanetTypeCustom02" Type="PlanetType">
+    <Property Name="PlanetClass" BaseValue="4"/>
+    <Modifier TargetProperty="PlanetInitialFoodPerPopulation"         Operation="Addition" Value="30"/>
+    <Modifier TargetProperty="PlanetInitialIndustryPerPopulation"     Operation="Addition" Value="0"/>
+    <Modifier TargetProperty="PlanetInitialDustPerPopulation"         Operation="Addition" Value="0"/>
+    <Modifier TargetProperty="PlanetInitialSciencePerPopulation"      Operation="Addition" Value="0"/>
+    <Modifier TargetProperty="PlanetInitialPrestigePerPopulation"     Operation="Addition" Value="0"/>
+    <BinaryModifier TargetProperty="Happiness" Operation="Addition" Left="-5" BinaryOperation="Multiplication" Right="$(Population)" TooltipHidden="true"/>
+    <Modifier TargetProperty="HappinessRaw" Operation="Addition" Value="-5"/>
+    <Modifier TargetProperty="PlanetIsGasOvergrown" Operation="Addition" Value="1" Path="ClassColonizedPlanet/ClassPopulation" TooltipHidden="true"/>
+  </SimulationDescriptor>
+
+<!--Gas Dwarf (2 pop, 27 FIDSI)-->
+  <SimulationDescriptor Name="PlanetTypeCustom03" Type="PlanetType">
+    <Property Name="PlanetClass" BaseValue="4"/>
+    <Modifier TargetProperty="PlanetInitialFoodPerPopulation"         Operation="Addition" Value="6"/>
+    <Modifier TargetProperty="PlanetInitialIndustryPerPopulation"     Operation="Addition" Value="7"/>
+    <Modifier TargetProperty="PlanetInitialDustPerPopulation"         Operation="Addition" Value="7"/>
+    <Modifier TargetProperty="PlanetInitialSciencePerPopulation"      Operation="Addition" Value="7"/>
+    <Modifier TargetProperty="PlanetInitialPrestigePerPopulation"     Operation="Addition" Value="0"/>
+    <BinaryModifier TargetProperty="Happiness" Operation="Addition" Left="-3" BinaryOperation="Multiplication" Right="$(Population)" TooltipHidden="true"/>
+    <Modifier TargetProperty="HappinessRaw" Operation="Addition" Value="-3"/>
+    <Modifier TargetProperty="PlanetIsGasDwarf" Operation="Addition" Value="1" Path="ClassColonizedPlanet/ClassPopulation" TooltipHidden="true"/>
+  </SimulationDescriptor>
+
+<!--Gas Chilly (1 pop, 30 FIDSI)-->
+  <SimulationDescriptor Name="PlanetTypeCustom04" Type="PlanetType">
+    <Property Name="PlanetClass" BaseValue="4"/>
+    <Modifier TargetProperty="PlanetInitialFoodPerPopulation"         Operation="Addition" Value="10"/>
+    <Modifier TargetProperty="PlanetInitialIndustryPerPopulation"     Operation="Addition" Value="0"/>
+    <Modifier TargetProperty="PlanetInitialDustPerPopulation"         Operation="Addition" Value="10"/>
+    <Modifier TargetProperty="PlanetInitialSciencePerPopulation"      Operation="Addition" Value="10"/>
+    <Modifier TargetProperty="PlanetInitialPrestigePerPopulation"     Operation="Addition" Value="0"/>
+    <BinaryModifier TargetProperty="Happiness" Operation="Addition" Left="-5" BinaryOperation="Multiplication" Right="$(Population)" TooltipHidden="true"/>
+    <Modifier TargetProperty="HappinessRaw" Operation="Addition" Value="-5"/>
+    <Modifier TargetProperty="PlanetIsGasChilly" Operation="Addition" Value="1" Path="ClassColonizedPlanet/ClassPopulation" TooltipHidden="true"/>
+  </SimulationDescriptor>
+
+<!--City (6 pop, 18 FIDSI)-->
+  <SimulationDescriptor Name="PlanetTypeCustom05" Type="PlanetType">
+    <Property Name="PlanetClass" BaseValue="4"/>
+    <Modifier TargetProperty="PlanetInitialFoodPerPopulation"         Operation="Addition" Value="0"/>
+    <Modifier TargetProperty="PlanetInitialIndustryPerPopulation"     Operation="Addition" Value="6"/>
+    <Modifier TargetProperty="PlanetInitialDustPerPopulation"         Operation="Addition" Value="6"/>
+    <Modifier TargetProperty="PlanetInitialSciencePerPopulation"      Operation="Addition" Value="6"/>
+    <Modifier TargetProperty="PlanetInitialPrestigePerPopulation"     Operation="Addition" Value="0"/>
+    <BinaryModifier TargetProperty="Happiness" Operation="Addition" Left="-1" BinaryOperation="Multiplication" Right="$(Population)" TooltipHidden="true"/>
+    <Modifier TargetProperty="HappinessRaw" Operation="Addition" Value="-1"/>
+    <Modifier TargetProperty="PlanetIsCityPlanet" Operation="Addition" Value="1" Path="ClassColonizedPlanet/ClassPopulation" TooltipHidden="true"/>
+  </SimulationDescriptor>
+
+<!--Farm (5 pop, 20 FIDSI)-->
+  <SimulationDescriptor Name="PlanetTypeCustom06" Type="PlanetType">
+    <Property Name="PlanetClass" BaseValue="4"/>
+    <Modifier TargetProperty="PlanetInitialFoodPerPopulation"         Operation="Addition" Value="8"/>
+    <Modifier TargetProperty="PlanetInitialIndustryPerPopulation"     Operation="Addition" Value="4"/>
+    <Modifier TargetProperty="PlanetInitialDustPerPopulation"         Operation="Addition" Value="4"/>
+    <Modifier TargetProperty="PlanetInitialSciencePerPopulation"      Operation="Addition" Value="4"/>
+    <Modifier TargetProperty="PlanetInitialPrestigePerPopulation"     Operation="Addition" Value="0"/>
+    <BinaryModifier TargetProperty="Happiness" Operation="Addition" Left="-1" BinaryOperation="Multiplication" Right="$(Population)" TooltipHidden="true"/>
+    <Modifier TargetProperty="HappinessRaw" Operation="Addition" Value="-1"/>
+    <Modifier TargetProperty="PlanetIsFarmPlanet" Operation="Addition" Value="1" Path="ClassColonizedPlanet/ClassPopulation" TooltipHidden="true"/>
+  </SimulationDescriptor>
+
+<!--Garbage (4 pop, 20 FIDSI)-->
+  <SimulationDescriptor Name="PlanetTypeCustom07" Type="PlanetType">
+    <Property Name="PlanetClass" BaseValue="3"/>
+    <Modifier TargetProperty="PlanetInitialFoodPerPopulation"         Operation="Addition" Value="4"/>
+    <Modifier TargetProperty="PlanetInitialIndustryPerPopulation"     Operation="Addition" Value="8"/>
+    <Modifier TargetProperty="PlanetInitialDustPerPopulation"         Operation="Addition" Value="4"/>
+    <Modifier TargetProperty="PlanetInitialSciencePerPopulation"      Operation="Addition" Value="4"/>
+    <Modifier TargetProperty="PlanetInitialPrestigePerPopulation"     Operation="Addition" Value="0"/>
+    <BinaryModifier TargetProperty="Happiness" Operation="Addition" Left="-3" BinaryOperation="Multiplication" Right="$(Population)" TooltipHidden="true"/>
+    <Modifier TargetProperty="HappinessRaw" Operation="Addition" Value="-3"/>
+    <Modifier TargetProperty="PlanetIsGarbagePlanet" Operation="Addition" Value="1" Path="ClassColonizedPlanet/ClassPopulation" TooltipHidden="true"/>
+  </SimulationDescriptor>
+
+<!--Polluted (3 pop, 20 FIDSI)-->
+  <SimulationDescriptor Name="PlanetTypeCustom08" Type="PlanetType">
+    <Property Name="PlanetClass" BaseValue="2"/>
+    <Modifier TargetProperty="PlanetInitialFoodPerPopulation"         Operation="Addition" Value="2"/>
+    <Modifier TargetProperty="PlanetInitialIndustryPerPopulation"     Operation="Addition" Value="6"/>
+    <Modifier TargetProperty="PlanetInitialDustPerPopulation"         Operation="Addition" Value="4"/>
+    <Modifier TargetProperty="PlanetInitialSciencePerPopulation"      Operation="Addition" Value="8"/>
+    <Modifier TargetProperty="PlanetInitialPrestigePerPopulation"     Operation="Addition" Value="0"/>
+    <BinaryModifier TargetProperty="Happiness" Operation="Addition" Left="-3" BinaryOperation="Multiplication" Right="$(Population)" TooltipHidden="true"/>
+    <Modifier TargetProperty="HappinessRaw" Operation="Addition" Value="-3"/>
+    <Modifier TargetProperty="PlanetIsPollutedPlanet" Operation="Addition" Value="1" Path="ClassColonizedPlanet/ClassPopulation" TooltipHidden="true"/>
+  </SimulationDescriptor>
+
+<!--Gas Influence (1 pop, 30 FIDSI)-->
+  <SimulationDescriptor Name="PlanetTypeUniqueCustom01" Type="PlanetType">
+    <Property Name="PlanetClass" BaseValue="4"/>
+    <Modifier TargetProperty="PlanetInitialFoodPerPopulation"         Operation="Addition" Value="0"/>
+    <Modifier TargetProperty="PlanetInitialIndustryPerPopulation"     Operation="Addition" Value="0"/>
+    <Modifier TargetProperty="PlanetInitialDustPerPopulation"         Operation="Addition" Value="15"/>
+    <Modifier TargetProperty="PlanetInitialSciencePerPopulation"      Operation="Addition" Value="0"/>
+    <Modifier TargetProperty="PlanetInitialPrestigePerPopulation"     Operation="Addition" Value="15"/>
+    <BinaryModifier TargetProperty="Happiness" Operation="Addition" Left="-5" BinaryOperation="Multiplication" Right="$(Population)" TooltipHidden="true"/>
+    <Modifier TargetProperty="HappinessRaw" Operation="Addition" Value="-5"/>
+    <Modifier TargetProperty="PlanetIsGasInfluence" Operation="Addition" Value="1" Path="ClassColonizedPlanet/ClassPopulation" TooltipHidden="true"/>
+  </SimulationDescriptor>
+
+<!--Inflence Gas (1 pop, 30 FIDSI)-->
+  <SimulationDescriptor Name="PlanetTypeUniqueCustom02" Type="PlanetType">
+    <Property Name="PlanetClass" BaseValue="4"/>
+    <Modifier TargetProperty="PlanetInitialFoodPerPopulation"         Operation="Addition" Value="0"/>
+    <Modifier TargetProperty="PlanetInitialIndustryPerPopulation"     Operation="Addition" Value="0"/>
+    <Modifier TargetProperty="PlanetInitialDustPerPopulation"         Operation="Addition" Value="0"/>
+    <Modifier TargetProperty="PlanetInitialSciencePerPopulation"      Operation="Addition" Value="0"/>
+    <Modifier TargetProperty="PlanetInitialPrestigePerPopulation"     Operation="Addition" Value="30"/>
+    <BinaryModifier TargetProperty="Happiness" Operation="Addition" Left="-5" BinaryOperation="Multiplication" Right="$(Population)" TooltipHidden="true"/>
+    <Modifier TargetProperty="HappinessRaw" Operation="Addition" Value="-5"/>
+    <Modifier TargetProperty="PlanetIsInfluenceGas" Operation="Addition" Value="1" Path="ClassColonizedPlanet/ClassPopulation" TooltipHidden="true"/>
+  </SimulationDescriptor>>
+
+  <!-- Planet Size list -->
+  <SimulationDescriptor Name="PlanetSizeHuge" Type="PlanetSize" >
+    <Property Name="OwnedHugePlanets"                           BaseValue="1" />
+
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="5"       Operation="Addition" Path="ClassPlanet,!PlanetGameplayTypeGas"         TooltipHidden="true"/>
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="1"       Operation="Addition" Path="PlanetTypeAsh"       TooltipHidden="true"/>
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="1"       Operation="Addition" Path="PlanetTypeIce"       TooltipHidden="true"/>
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeArid"      TooltipHidden="true"/>
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeSnow"      TooltipHidden="true"/>
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeDesert"    TooltipHidden="true"/>
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeArctic"    TooltipHidden="true"/>
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="4"       Operation="Addition" Path="PlanetTypeBoreal"    TooltipHidden="true"/>
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="4"       Operation="Addition" Path="PlanetTypeJungle"    TooltipHidden="true"/>
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="4"       Operation="Addition" Path="PlanetTypeTundra"    TooltipHidden="true"/>
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="4"       Operation="Addition" Path="PlanetTypeTropical"  TooltipHidden="true"/>
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="4"       Operation="Addition" Path="PlanetTypeMonsoon"   TooltipHidden="true"/>
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="4"       Operation="Addition" Path="PlanetTypeVeldt"     TooltipHidden="true"/>
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="4"       Operation="Addition" Path="PlanetTypeSteppes"   TooltipHidden="true"/>
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="5"       Operation="Addition" Path="PlanetTypeTerran"    TooltipHidden="true"/>
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="5"       Operation="Addition" Path="PlanetTypeForest"    TooltipHidden="true"/>
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="5"       Operation="Addition" Path="PlanetTypeOcean"     TooltipHidden="true"/>
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="5"       Operation="Addition" Path="PlanetTypeAtoll"     TooltipHidden="true"/>
+    <!-- DLC3 -->
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeFake"      TooltipHidden="true"/>
+<!--Gas Fertile-->
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="1"       Operation="Addition" Path="PlanetTypeCustom01"    TooltipHidden="true"/>
+<!--Gas Overgrown-->
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="1"       Operation="Addition" Path="PlanetTypeCustom02"     TooltipHidden="true"/>
+<!--Gas Dwarf-->
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeCustom03"     TooltipHidden="true"/>
+<!--Gas Chilly-->
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="1"       Operation="Addition" Path="PlanetTypeCustom04"    TooltipHidden="true"/>
+<!--City-->
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="6"       Operation="Addition" Path="PlanetTypeCustom05"     TooltipHidden="true"/>
+<!--Farm-->
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="5"       Operation="Addition" Path="PlanetTypeCustom06"     TooltipHidden="true"/>
+<!--Garbage-->
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="4"       Operation="Addition" Path="PlanetTypeCustom07"     TooltipHidden="true"/>
+<!--Polluted-->
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="3"       Operation="Addition" Path="PlanetTypeCustom08"     TooltipHidden="true"/>
+<!--Gas Influence-->
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="1"       Operation="Addition" Path="PlanetTypeUniqueCustom01"    TooltipHidden="true"/>
+<!--Influence Gas-->
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="1"       Operation="Addition" Path="PlanetTypeUniqueCustom02"     TooltipHidden="true"/>
+
+    <Modifier TargetProperty="PlanetDepletionMax"       Value="200" Operation="Addition" Path="ClassPlanet" TooltipHidden="true"/>
+    <Modifier TargetProperty="PlanetIsHuge"            Operation="Force"     Value="1"   Path="ClassPlanet/ClassPopulationPlanet"    TooltipHidden="true"/>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="PlanetSizeLarge" Type="PlanetSize" >
+    <Property Name="OwnedLargePlanets"                           BaseValue="1" />
+
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="4"       Operation="Addition" Path="ClassPlanet,!PlanetGameplayTypeGas"         TooltipHidden="true"/>
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="1"       Operation="Addition" Path="PlanetTypeAsh"       TooltipHidden="true"/>
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="1"       Operation="Addition" Path="PlanetTypeIce"       TooltipHidden="true"/>
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeArid"      TooltipHidden="true"/>
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeSnow"      TooltipHidden="true"/>
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeDesert"    TooltipHidden="true"/>
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeArctic"    TooltipHidden="true"/>
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="4"       Operation="Addition" Path="PlanetTypeBoreal"    TooltipHidden="true"/>
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="4"       Operation="Addition" Path="PlanetTypeJungle"    TooltipHidden="true"/>
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="4"       Operation="Addition" Path="PlanetTypeTundra"    TooltipHidden="true"/>
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="4"       Operation="Addition" Path="PlanetTypeTropical"  TooltipHidden="true"/>
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="4"       Operation="Addition" Path="PlanetTypeMonsoon"   TooltipHidden="true"/>
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="4"       Operation="Addition" Path="PlanetTypeVeldt"     TooltipHidden="true"/>
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="4"       Operation="Addition" Path="PlanetTypeSteppes"   TooltipHidden="true"/>
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="5"       Operation="Addition" Path="PlanetTypeTerran"    TooltipHidden="true"/>
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="5"       Operation="Addition" Path="PlanetTypeForest"    TooltipHidden="true"/>
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="5"       Operation="Addition" Path="PlanetTypeOcean"     TooltipHidden="true"/>
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="5"       Operation="Addition" Path="PlanetTypeAtoll"     TooltipHidden="true"/>
+    <!-- DLC3 -->
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeFake"      TooltipHidden="true"/>
+<!--Gas Fertile-->
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="1"       Operation="Addition" Path="PlanetTypeCustom01"    TooltipHidden="true"/>
+<!--Gas Overgrown-->
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="1"       Operation="Addition" Path="PlanetTypeCustom02"     TooltipHidden="true"/>
+<!--Gas Dwarf-->
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeCustom03"     TooltipHidden="true"/>
+<!--Gas Chilly-->
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="1"       Operation="Addition" Path="PlanetTypeCustom04"    TooltipHidden="true"/>
+<!--City-->
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="6"       Operation="Addition" Path="PlanetTypeCustom05"     TooltipHidden="true"/>
+<!--Farm-->
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="5"       Operation="Addition" Path="PlanetTypeCustom06"     TooltipHidden="true"/>
+<!--Garbage-->
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="4"       Operation="Addition" Path="PlanetTypeCustom07"     TooltipHidden="true"/>
+<!--Polluted-->
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="3"       Operation="Addition" Path="PlanetTypeCustom08"     TooltipHidden="true"/>
+<!--Gas Influence-->
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="1"       Operation="Addition" Path="PlanetTypeUniqueCustom01"    TooltipHidden="true"/>
+<!--Influence Gas-->
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="1"       Operation="Addition" Path="PlanetTypeUniqueCustom02"     TooltipHidden="true"/>
+
+    <Modifier TargetProperty="PlanetDepletionMax"       Value="180" Operation="Addition" Path="ClassPlanet" TooltipHidden="true"/>
+    <Modifier TargetProperty="PlanetIsLarge"            Operation="Force"     Value="1"   Path="ClassPlanet/ClassPopulationPlanet"    TooltipHidden="true"/>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="PlanetSizeMedium" Type="PlanetSize" >
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="3"       Operation="Addition" Path="ClassPlanet,!PlanetGameplayTypeGas"         TooltipHidden="true"/>
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="1"       Operation="Addition" Path="PlanetTypeAsh"       TooltipHidden="true"/>
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="1"       Operation="Addition" Path="PlanetTypeIce"       TooltipHidden="true"/>
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeArid"      TooltipHidden="true"/>
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeSnow"      TooltipHidden="true"/>
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeDesert"    TooltipHidden="true"/>
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeArctic"    TooltipHidden="true"/>
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="4"       Operation="Addition" Path="PlanetTypeBoreal"    TooltipHidden="true"/>
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="4"       Operation="Addition" Path="PlanetTypeJungle"    TooltipHidden="true"/>
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="4"       Operation="Addition" Path="PlanetTypeTundra"    TooltipHidden="true"/>
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="4"       Operation="Addition" Path="PlanetTypeTropical"  TooltipHidden="true"/>
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="4"       Operation="Addition" Path="PlanetTypeMonsoon"   TooltipHidden="true"/>
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="4"       Operation="Addition" Path="PlanetTypeVeldt"     TooltipHidden="true"/>
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="4"       Operation="Addition" Path="PlanetTypeSteppes"   TooltipHidden="true"/>
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="5"       Operation="Addition" Path="PlanetTypeTerran"    TooltipHidden="true"/>
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="5"       Operation="Addition" Path="PlanetTypeForest"    TooltipHidden="true"/>
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="5"       Operation="Addition" Path="PlanetTypeOcean"     TooltipHidden="true"/>
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="5"       Operation="Addition" Path="PlanetTypeAtoll"     TooltipHidden="true"/>
+    <!-- DLC3 -->
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeFake"      TooltipHidden="true"/>
+<!--Gas Fertile-->
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="1"       Operation="Addition" Path="PlanetTypeCustom01"    TooltipHidden="true"/>
+<!--Gas Overgrown-->
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="1"       Operation="Addition" Path="PlanetTypeCustom02"     TooltipHidden="true"/>
+<!--Gas Dwarf-->
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeCustom03"     TooltipHidden="true"/>
+<!--Gas Chilly-->
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="1"       Operation="Addition" Path="PlanetTypeCustom04"    TooltipHidden="true"/>
+<!--City-->
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="6"       Operation="Addition" Path="PlanetTypeCustom05"     TooltipHidden="true"/>
+<!--Farm-->
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="5"       Operation="Addition" Path="PlanetTypeCustom06"     TooltipHidden="true"/>
+<!--Garbage-->
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="4"       Operation="Addition" Path="PlanetTypeCustom07"     TooltipHidden="true"/>
+<!--Polluted-->
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="3"       Operation="Addition" Path="PlanetTypeCustom08"     TooltipHidden="true"/>
+<!--Gas Influence-->
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="1"       Operation="Addition" Path="PlanetTypeUniqueCustom01"    TooltipHidden="true"/>
+<!--Influence Gas-->
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="1"       Operation="Addition" Path="PlanetTypeUniqueCustom02"     TooltipHidden="true"/>
+
+    <Modifier TargetProperty="PlanetDepletionMax"       Value="150" Operation="Addition" Path="ClassPlanet" TooltipHidden="true"/>
+    <Modifier TargetProperty="PlanetIsMedium"            Operation="Force"     Value="1"   Path="ClassPlanet/ClassPopulationPlanet"    TooltipHidden="true"/>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="PlanetSizeSmall" Type="PlanetSize" >
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="ClassPlanet,!PlanetGameplayTypeGas"         TooltipHidden="true"/>
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="1"       Operation="Addition" Path="PlanetTypeAsh"       TooltipHidden="true"/>
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="1"       Operation="Addition" Path="PlanetTypeIce"       TooltipHidden="true"/>
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeArid"      TooltipHidden="true"/>
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeSnow"      TooltipHidden="true"/>
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeDesert"    TooltipHidden="true"/>
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeArctic"    TooltipHidden="true"/>
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="4"       Operation="Addition" Path="PlanetTypeBoreal"    TooltipHidden="true"/>
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="4"       Operation="Addition" Path="PlanetTypeJungle"    TooltipHidden="true"/>
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="4"       Operation="Addition" Path="PlanetTypeTundra"    TooltipHidden="true"/>
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="4"       Operation="Addition" Path="PlanetTypeTropical"  TooltipHidden="true"/>
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="4"       Operation="Addition" Path="PlanetTypeMonsoon"   TooltipHidden="true"/>
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="4"       Operation="Addition" Path="PlanetTypeVeldt"     TooltipHidden="true"/>
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="4"       Operation="Addition" Path="PlanetTypeSteppes"   TooltipHidden="true"/>
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="5"       Operation="Addition" Path="PlanetTypeTerran"    TooltipHidden="true"/>
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="5"       Operation="Addition" Path="PlanetTypeForest"    TooltipHidden="true"/>
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="5"       Operation="Addition" Path="PlanetTypeOcean"     TooltipHidden="true"/>
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="5"       Operation="Addition" Path="PlanetTypeAtoll"     TooltipHidden="true"/>
+    <!-- DLC3 -->
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeFake"      TooltipHidden="true"/>
+<!--Gas Fertile-->
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="1"       Operation="Addition" Path="PlanetTypeCustom01"    TooltipHidden="true"/>
+<!--Gas Overgrown-->
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="1"       Operation="Addition" Path="PlanetTypeCustom02"     TooltipHidden="true"/>
+<!--Gas Dwarf-->
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeCustom03"     TooltipHidden="true"/>
+<!--Gas Chilly-->
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="1"       Operation="Addition" Path="PlanetTypeCustom04"    TooltipHidden="true"/>
+<!--City-->
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="6"       Operation="Addition" Path="PlanetTypeCustom05"     TooltipHidden="true"/>
+<!--Farm-->
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="5"       Operation="Addition" Path="PlanetTypeCustom06"     TooltipHidden="true"/>
+<!--Garbage-->
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="4"       Operation="Addition" Path="PlanetTypeCustom07"     TooltipHidden="true"/>
+<!--Polluted-->
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="3"       Operation="Addition" Path="PlanetTypeCustom08"     TooltipHidden="true"/>
+<!--Gas Influence-->
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="1"       Operation="Addition" Path="PlanetTypeUniqueCustom01"    TooltipHidden="true"/>
+<!--Influence Gas-->
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="1"       Operation="Addition" Path="PlanetTypeUniqueCustom02"     TooltipHidden="true"/>
+
+    <Modifier TargetProperty="PlanetDepletionMax"       Value="120" Operation="Addition" Path="ClassPlanet" TooltipHidden="true"/>
+    <Modifier TargetProperty="PlanetIsSmall"            Operation="Force"     Value="1"   Path="ClassPlanet/ClassPopulationPlanet"    TooltipHidden="true"/>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="PlanetSizeTiny" Type="PlanetSize" >
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="1"       Operation="Addition" Path="ClassPlanet,!PlanetGameplayTypeGas"         TooltipHidden="true"/>
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="1"       Operation="Addition" Path="PlanetTypeAsh"       TooltipHidden="true"/>
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="1"       Operation="Addition" Path="PlanetTypeIce"       TooltipHidden="true"/>
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeArid"      TooltipHidden="true"/>
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeSnow"      TooltipHidden="true"/>
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeDesert"    TooltipHidden="true"/>
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeArctic"    TooltipHidden="true"/>
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="4"       Operation="Addition" Path="PlanetTypeBoreal"    TooltipHidden="true"/>
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="4"       Operation="Addition" Path="PlanetTypeJungle"    TooltipHidden="true"/>
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="4"       Operation="Addition" Path="PlanetTypeTundra"    TooltipHidden="true"/>
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="4"       Operation="Addition" Path="PlanetTypeTropical"  TooltipHidden="true"/>
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="4"       Operation="Addition" Path="PlanetTypeMonsoon"   TooltipHidden="true"/>
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="4"       Operation="Addition" Path="PlanetTypeVeldt"     TooltipHidden="true"/>
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="4"       Operation="Addition" Path="PlanetTypeSteppes"   TooltipHidden="true"/>
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="5"       Operation="Addition" Path="PlanetTypeTerran"    TooltipHidden="true"/>
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="5"       Operation="Addition" Path="PlanetTypeForest"    TooltipHidden="true"/>
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="5"       Operation="Addition" Path="PlanetTypeOcean"     TooltipHidden="true"/>
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="5"       Operation="Addition" Path="PlanetTypeAtoll"     TooltipHidden="true"/>
+<!--Gas Fertile-->
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="1"       Operation="Addition" Path="PlanetTypeCustom01"    TooltipHidden="true"/>
+<!--Gas Overgrown-->
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="1"       Operation="Addition" Path="PlanetTypeCustom02"     TooltipHidden="true"/>
+<!--Gas Dwarf-->
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeCustom03"     TooltipHidden="true"/>
+<!--Gas Chilly-->
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="1"       Operation="Addition" Path="PlanetTypeCustom04"    TooltipHidden="true"/>
+<!--City-->
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="6"       Operation="Addition" Path="PlanetTypeCustom05"     TooltipHidden="true"/>
+<!--Farm-->
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="5"       Operation="Addition" Path="PlanetTypeCustom06"     TooltipHidden="true"/>
+<!--Garbage-->
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="4"       Operation="Addition" Path="PlanetTypeCustom07"     TooltipHidden="true"/>
+<!--Polluted-->
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="3"       Operation="Addition" Path="PlanetTypeCustom08"     TooltipHidden="true"/>
+<!--Gas Influence-->
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="1"       Operation="Addition" Path="PlanetTypeUniqueCustom01"    TooltipHidden="true"/>
+<!--Influence Gas-->
+    <Modifier TargetProperty="RawMaximumPopulation"     Value="1"       Operation="Addition" Path="PlanetTypeUniqueCustom02"     TooltipHidden="true"/>
+
+    <Modifier TargetProperty="PlanetDepletionMax"       Value="100" Operation="Addition" Path="ClassPlanet" TooltipHidden="true"/>
+    <Modifier TargetProperty="PlanetIsTiny"            Operation="Force"     Value="1"   Path="ClassPlanet/ClassPopulationPlanet"    TooltipHidden="true"/>
+  </SimulationDescriptor>
+
+</Datatable>

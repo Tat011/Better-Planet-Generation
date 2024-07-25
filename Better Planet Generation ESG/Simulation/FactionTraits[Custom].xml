@@ -1,0 +1,35 @@
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/FactionTrait.xsd">
+
+  <FactionTrait Name="FactionTraitHomePlanetPlanetTypeCustom01" SubCategory="HomePlanet" Hidden="true" Custom="true" Cost="-5" IgnoreForTraitsCount="true">
+    <SimulationDescriptorReference Name="FactionTraitHomePlanetPlanetTypeCustom01"/>
+  </FactionTrait>
+
+  <FactionTrait Name="FactionTraitHomePlanetPlanetTypeCustom02" SubCategory="HomePlanet" Hidden="true" Custom="true" Cost="-5" IgnoreForTraitsCount="true">
+    <SimulationDescriptorReference Name="FactionTraitHomePlanetPlanetTypeCustom02"/>
+  </FactionTrait>
+
+  <FactionTrait Name="FactionTraitHomePlanetPlanetTypeCustom03" SubCategory="HomePlanet" Hidden="true" Custom="true" Cost="-4" IgnoreForTraitsCount="true">
+    <SimulationDescriptorReference Name="FactionTraitHomePlanetPlanetTypeCustom03"/>
+  </FactionTrait>
+
+  <FactionTrait Name="FactionTraitHomePlanetPlanetTypeCustom04" SubCategory="HomePlanet" Hidden="true" Custom="true" Cost="-5" IgnoreForTraitsCount="true">
+    <SimulationDescriptorReference Name="FactionTraitHomePlanetPlanetTypeCustom04"/>
+  </FactionTrait>
+
+  <FactionTrait Name="FactionTraitHomePlanetPlanetTypeCustom05" SubCategory="HomePlanet" Hidden="true" Custom="true" Cost="15" IgnoreForTraitsCount="true">
+    <SimulationDescriptorReference Name="FactionTraitHomePlanetPlanetTypeCustom05"/>
+  </FactionTrait>
+
+  <FactionTrait Name="FactionTraitHomePlanetPlanetTypeCustom06" SubCategory="HomePlanet" Hidden="true" Custom="true" Cost="15" IgnoreForTraitsCount="true">
+    <SimulationDescriptorReference Name="FactionTraitHomePlanetPlanetTypeCustom06"/>
+  </FactionTrait>
+
+  <FactionTrait Name="FactionTraitHomePlanetPlanetTypeCustom07" SubCategory="HomePlanet" Hidden="true" Custom="true" Cost="5" IgnoreForTraitsCount="true">
+    <SimulationDescriptorReference Name="FactionTraitHomePlanetPlanetTypeCustom07"/>
+  </FactionTrait>
+
+  <FactionTrait Name="FactionTraitHomePlanetPlanetTypeCustom08" SubCategory="HomePlanet" Hidden="true" Custom="true" Cost="0" IgnoreForTraitsCount="true">
+    <SimulationDescriptorReference Name="FactionTraitHomePlanetPlanetTypeCustom08"/>
+  </FactionTrait>
+
+</Datatable>

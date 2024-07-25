@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!--Stars-->
+  <LocalizationPair Name="%StarTypeRedSupergiantTitle">Red Supergiant</LocalizationPair>
+  <LocalizationPair Name="%StarTypeRedSupergiantDescription">These stars have a really strong chance of harboring Hot planets.</LocalizationPair>
+  
+  <LocalizationPair Name="%StarTypeBlueTitle">Blue Star</LocalizationPair>
+  <LocalizationPair Name="%StarTypeBlueDescription">These stars have a really strong chance of harboring Hot planets.</LocalizationPair>
+
+  <LocalizationPair Name="%StarTypeDoubleTitle">Binary Star</LocalizationPair>
+  <LocalizationPair Name="%StarTypeDoubleDescription">These stars have a good chance of harboring Hot planets.</LocalizationPair>
+ 
+  <LocalizationPair Name="%StarTypeYellowTitle">Yellow Star</LocalizationPair>
+  <LocalizationPair Name="%StarTypeYellowDescription">These stars have a good chance of harboring planets of any type.</LocalizationPair>
+  
+  <LocalizationPair Name="%StarTypeWhiteTitle">White Star</LocalizationPair>
+  <LocalizationPair Name="%StarTypeWhiteDescription">These stars have a good chance of harboring planets of any type.</LocalizationPair>
+
+  <LocalizationPair Name="%StarTypeDysonSphereTitle">Dyson Sphere</LocalizationPair>
+  <LocalizationPair Name="%StarTypeDysonSphereDescription">These stars have a good chance of harboring planets of any type.</LocalizationPair>
+
+  <LocalizationPair Name="%StarTypeProtostarTitle">Protostar</LocalizationPair>
+  <LocalizationPair Name="%StarTypeProtostarDescription">These stars have a good chance of harboring Cold planets.</LocalizationPair>
+ 
+  <LocalizationPair Name="%StarTypeRedDwarfTitle">Red Dwarf</LocalizationPair>
+  <LocalizationPair Name="%StarTypeRedDwarfDescription">These stars have a really strong chance of harboring Cold planets.</LocalizationPair>
+ 
+  <LocalizationPair Name="%StarTypeWhiteDwarfTitle">White Dwarf</LocalizationPair>
+  <LocalizationPair Name="%StarTypeWhiteDwarfDescription">These stars have a really strong chance of harboring Cold planets.</LocalizationPair> 
+ 
+  <LocalizationPair Name="%StarTypeArtificialTitle">Artificial</LocalizationPair>
+  <LocalizationPair Name="%StarTypeArtificialDescription">These stars have a strong chance of harboring Fertile planets.</LocalizationPair>
+  
+  <LocalizationPair Name="%StarTypeNoneTitle">None</LocalizationPair>
+  <LocalizationPair Name="%StarTypeNoneDescription">Only extreme planets can be found in the absence of a star.</LocalizationPair>
+ 
+<!--Planets-->
+  <LocalizationPair Name="%PlanetTypeCustom01Title">Gas Fertile</LocalizationPair>
+  <LocalizationPair Name="%PlanetTypeCustom01Description">It's not common to find lifeforms on gas giants, it's even less common to find them in such high ammounts. The potential for extraction is unrivaled.</LocalizationPair>
+
+  <LocalizationPair Name="%PlanetColonizationCustom01Title">Colonize Fertile Giant</LocalizationPair>
+  <LocalizationPair Name="%PlanetColonizationCustom01Description">On top of the challanges of colonizing any gas giant this planet requires extensive decontamination procedures to prevent potentially dangerous gas giant organisms out and to keep telluric ones in.</LocalizationPair>
+
+  <LocalizationPair Name="%FactionTraitHomePlanetPlanetTypeCustom01Title">Gas Fertile</LocalizationPair>
+
+
+  <LocalizationPair Name="%PlanetTypeCustom02Title">Gas Overgrown</LocalizationPair>
+  <LocalizationPair Name="%PlanetTypeCustom02Description">Layers upon layers of organisms litter the planet's atmosphere, the ammount of life here is so high any residents will never go hungry and you will have plenty to export off world.</LocalizationPair>
+
+  <LocalizationPair Name="%PlanetColonizationCustom02Title">Colonize Overgrown Giant</LocalizationPair>
+  <LocalizationPair Name="%PlanetColonizationCustom02Description">This planet is so overgrown that even finding a spot to build a settlement is a challange, we wouldn't want our base to end up burried in layers of bacteria now would we?</LocalizationPair>
+
+  <LocalizationPair Name="%FactionTraitHomePlanetPlanetTypeCustom02Title">Gas Overgrown</LocalizationPair>
+
+
+  <LocalizationPair Name="%PlanetTypeCustom03Title">Gas Dwarf</LocalizationPair>
+  <LocalizationPair Name="%PlanetTypeCustom03Description">Being the bridge between telluric planets and gas giants, these planets inherit the properties of both categories.</LocalizationPair>
+
+  <LocalizationPair Name="%PlanetColonizationCustom03Title">Colonize Gas Dwarf</LocalizationPair>
+  <LocalizationPair Name="%PlanetColonizationCustom03Description">Gas Dwarfs present more of a challange than your average telluric planet, settling one requires ships and habitats that can withstand tremendous winds and pressures.</LocalizationPair>
+
+  <LocalizationPair Name="%FactionTraitHomePlanetPlanetTypeCustom03Title">Gas Dwarf</LocalizationPair>
+
+
+  <LocalizationPair Name="%PlanetTypeCustom04Title">Gas Chilly</LocalizationPair>
+  <LocalizationPair Name="%PlanetTypeCustom04Description">These Gas Giants have a cool internal temperature that's not too cold, allowing for both telluric and non-telluric lifeforms to thrive easier.</LocalizationPair>
+
+  <LocalizationPair Name="%PlanetColonizationCustom04Title">Colonize Chilly Giant</LocalizationPair>
+  <LocalizationPair Name="%PlanetColonizationCustom04Description">All the standard gas giant colonization procedures still apply here, though your settlers are going to have a slightly easier time growing food.</LocalizationPair>
+
+  <LocalizationPair Name="%FactionTraitHomePlanetPlanetTypeCustom04Title">Gas Chilly</LocalizationPair>
+
+
+  <LocalizationPair Name="%PlanetTypeCustom05Title">Ecumenopolis</LocalizationPair>
+  <LocalizationPair Name="%PlanetTypeCustom05Description">The end point of sapient expansion, this planet is one giant city with little to no natural terrain left. To retain habitability the inhabitants of such worlds have to manage the resources of the entire planet carefully as there's no nature to do it for them. How this planet ended up deserted is a mystery.</LocalizationPair>
+
+  <LocalizationPair Name="%PlanetColonizationCustom05Title">Colonize Ecumenopolis</LocalizationPair>
+  <LocalizationPair Name="%PlanetColonizationCustom05Description">Bringing all the dormant infrastructure back to life is no easy task, colonizers will need to cooperate with archaeologists to uncover the inner workings of the planet.</LocalizationPair>
+
+  <LocalizationPair Name="%FactionTraitHomePlanetPlanetTypeCustom05Title">Ecumenopolis</LocalizationPair>
+
+
+  <LocalizationPair Name="%PlanetTypeCustom06Title">Ecumenager</LocalizationPair>
+  <LocalizationPair Name="%PlanetTypeCustom06Description">Another end point of sapient expansion, teeming with domesticated organisms of all types, this planet is one giant farmstead. Built to feed entire worlds, it is unknown how this planet ended up abandoned.</LocalizationPair>
+
+  <LocalizationPair Name="%PlanetColonizationCustom06Title">Colonize Ecumenager</LocalizationPair>
+  <LocalizationPair Name="%PlanetColonizationCustom06Description">Bringing all the dormant infrastructure back to life and re-domesticating all the lifeforms is no easy task, colonizers will need to cooperate with archaeologists and biologists to unocover the inner workings of the planet.</LocalizationPair>
+
+  <LocalizationPair Name="%FactionTraitHomePlanetPlanetTypeCustom06Title">Ecumenager</LocalizationPair>
+
+
+  <LocalizationPair Name="%PlanetTypeCustom07Title">Garbage</LocalizationPair>
+  <LocalizationPair Name="%PlanetTypeCustom07Description">The dumping ground of an inter-planetary civilization, this planet is entirely covered in garbage. Yet one civilization's trash is another's treasure, there's much insight to be gained here and machinery to be repurposed.</LocalizationPair>
+
+  <LocalizationPair Name="%PlanetColonizationCustom07Title">Colonize Garbage</LocalizationPair>
+  <LocalizationPair Name="%PlanetColonizationCustom07Description">Colonizing this planet is difficult for obvious reasons, your colonists will have to deal with pollutants of all kinds and have to handle unidentified alien machinery on a mostly sterile world.</LocalizationPair>
+
+  <LocalizationPair Name="%FactionTraitHomePlanetPlanetTypeCustom07Title">Garbage</LocalizationPair>
+
+
+  <LocalizationPair Name="%PlanetTypeCustom08Title">Polluted</LocalizationPair>
+  <LocalizationPair Name="%PlanetTypeCustom08Description">Whether by natural or artificial causes, this planet is covered in chemicals and emmisions toxic to most lifeforms, while this makes this planet unpleasant to live on it makes it an exelent place of scientific study.</LocalizationPair>
+
+  <LocalizationPair Name="%PlanetColonizationCustom08Title">Colonize Polluted</LocalizationPair>
+  <LocalizationPair Name="%PlanetColonizationCustom08Description">Colonizing this planet is difficult for obvious reasons, your colonists will have to deal with chemicals of all kinds and filter them out of the environment.</LocalizationPair>
+
+  <LocalizationPair Name="%FactionTraitHomePlanetPlanetTypeCustom08Title">Polluted</LocalizationPair>
+
+</Datatable>

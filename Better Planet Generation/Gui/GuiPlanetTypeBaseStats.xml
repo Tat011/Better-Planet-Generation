@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Documentation/Schemas/GuiPlanetTypeBaseStats.xsd">
+<!--Scan view decorative info (Keep in mind size warps some of these stats)-->
+<!--Gas Fertile-->
+    <GuiPlanetTypeBaseStats Name="PlanetTypeCustom01">
+<!--In km: Earth is 6300, Mercury is 2400, Jupiter is 70000-->
+        <Stat Name="MeanRadius" Min="30000" Max="40000" />
+<!--In 10²⁴kg: Earth is 6, Mercury is 0.3, Jupiter is 1900-->
+        <Stat Name="Mass" Min="3" Max="9" />
+<!--In m/s²: Earth is 10, Mercury is 3, Jupiter is 25, Saturn/Neptun/Uranis are 8-11-->
+        <Stat Name="SurfaceGravity" Min="8" Max="12" />
+<!--In days, but if it was at a close orbit like Mercury, then it will be modified programmatically by the orbit index: Mercury is 88, Saturn is 10700-->
+        <Stat Name="OrbitalPeriod" Min="100" Max="300" />
+<!--In days: Earth is 1, Mercury is 58, Venus is 243, Mars is 25, Jupiter is 0.4, Saturn is 0.5, Uranus is 0.7 (gaz giants rotate very fast)-->
+        <Stat Name="RotationPeriod" Min="0.3" Max="0.8" />
+<!--In percentages, the game will normalize the results of the randomized values to have a total of 100%-->
+        <Stat Name="AtmosphereComposition">
+            <StatDetail Name="H₂" Min="35" Max="60" />
+            <StatDetail Name="He" Min="5" Max="20" />
+            <StatDetail Name="CH₄" Min="0" Max="1" />
+            <StatDetail Name="NH₃" Min="0" Max="1" />
+            <StatDetail Name="H₂O" Min="1" Max="5" />
+            <StatDetail Name="N₂" Min="35" Max="60" />
+            <StatDetail Name="O₂" Min="10" Max="30" />
+            <StatDetail Name="CO₂" Min="0" Max="1" />
+        </Stat>
+<!--In bar: Earth is 1, Mars is 0.001, Venus is 92-->
+        <Stat Name="AtmospherePressure" Min="0.8" Max="1.2" />
+<!--In K (kelvin): Earth is 290, Mars is 210, Venus is 730-->
+        <Stat Name="AtmosphereTemperature" Min="250" Max="350" />
+<!--In percentages, the result will normalize the results of the randomized values to have a total of 100%-->
+        <Stat Name="PlanetMainElements">
+            <StatDetail Name="H₂" Min="35" Max="55" />
+            <StatDetail Name="He" Min="10" Max="20" />
+            <StatDetail Name="Si" Min="5" Max="10" />
+            <StatDetail Name="Fe" Min="5" Max="10" />
+        </Stat >
+<!--Core type, i think there's just metalic and stony-->
+        <Stat Name="CoreType" Value="%PlanetCoreTypeStonyTitle" />
+    </GuiPlanetTypeBaseStats>
+
+<!--Gas Overgrown-->
+    <GuiPlanetTypeBaseStats Name="PlanetTypeCustom02">
+        <Stat Name="MeanRadius" Min="30000" Max="40000" />
+        <Stat Name="Mass" Min="3" Max="9" />
+        <Stat Name="SurfaceGravity" Min="8" Max="12" />
+        <Stat Name="OrbitalPeriod" Min="100" Max="300" />
+        <Stat Name="RotationPeriod" Min="0.3" Max="0.8" />
+        <Stat Name="AtmosphereComposition">
+            <StatDetail Name="H₂" Min="35" Max="60" />
+            <StatDetail Name="He" Min="5" Max="20" />
+            <StatDetail Name="CH₄" Min="0" Max="1" />
+            <StatDetail Name="NH₃" Min="0" Max="1" />
+            <StatDetail Name="H₂O" Min="1" Max="5" />
+            <StatDetail Name="N₂" Min="35" Max="60" />
+            <StatDetail Name="O₂" Min="10" Max="30" />
+            <StatDetail Name="CO₂" Min="0" Max="1" />
+        </Stat>
+        <Stat Name="AtmospherePressure" Min="0.8" Max="1.2" />
+        <Stat Name="AtmosphereTemperature" Min="250" Max="350" />
+        <Stat Name="PlanetMainElements">
+            <StatDetail Name="H₂" Min="35" Max="55" />
+            <StatDetail Name="He" Min="10" Max="20" />
+            <StatDetail Name="Si" Min="5" Max="10" />
+            <StatDetail Name="Fe" Min="5" Max="10" />
+        </Stat >
+        <Stat Name="CoreType" Value="%PlanetCoreTypeStonyTitle" />
+    </GuiPlanetTypeBaseStats>
+
+<!--Gas Dwarf-->
+    <GuiPlanetTypeBaseStats Name="PlanetTypeCustom03">
+        <Stat Name="MeanRadius" Min="15000" Max="20000" />
+        <Stat Name="Mass" Min="3" Max="9" />
+        <Stat Name="SurfaceGravity" Min="8" Max="12" />
+        <Stat Name="OrbitalPeriod" Min="100" Max="300" />
+        <Stat Name="RotationPeriod" Min="0.5" Max="1.2" />
+        <Stat Name="AtmosphereComposition">
+            <StatDetail Name="H₂" Min="35" Max="60" />
+            <StatDetail Name="He" Min="5" Max="20" />
+            <StatDetail Name="NH₃" Min="0" Max="1" />
+            <StatDetail Name="H₂O" Min="1" Max="4" />
+            <StatDetail Name="N₂" Min="35" Max="60" />
+            <StatDetail Name="O₂" Min="10" Max="30" />
+            <StatDetail Name="CO₂" Min="0" Max="1" />
+        </Stat>
+        <Stat Name="AtmospherePressure" Min="1.2" Max="1.6" />
+        <Stat Name="AtmosphereTemperature" Min="250" Max="350" />
+        <Stat Name="PlanetMainElements">
+            <StatDetail Name="H₂" Min="35" Max="55" />
+            <StatDetail Name="He" Min="10" Max="20" />
+            <StatDetail Name="Si" Min="5" Max="10" />
+            <StatDetail Name="Fe" Min="5" Max="10" />
+        </Stat >
+        <Stat Name="CoreType" Value="%PlanetCoreTypeStonyTitle" />
+    </GuiPlanetTypeBaseStats>
+
+<!--Gas Chilly-->
+    <GuiPlanetTypeBaseStats Name="PlanetTypeCustom04">
+        <Stat Name="MeanRadius" Min="40000" Max="50000" />
+        <Stat Name="Mass" Min="3" Max="9" />
+        <Stat Name="SurfaceGravity" Min="8" Max="12" />
+        <Stat Name="OrbitalPeriod" Min="100" Max="300" />
+        <Stat Name="RotationPeriod" Min="0.3" Max="0.6" />
+        <Stat Name="AtmosphereComposition">
+            <StatDetail Name="H₂" Min="75" Max="85" />
+            <StatDetail Name="He" Min="15" Max="25" />
+            <StatDetail Name="CH₄" Min="1" Max="2" />
+            <StatDetail Name="NH₃" Min="0" Max="1" />
+            <StatDetail Name="H₂O" Min="0" Max="1" />
+        </Stat>
+        <Stat Name="AtmospherePressure" Min="0.8" Max="1.2" />
+        <Stat Name="AtmosphereTemperature" Min="400" Max="500" />
+        <Stat Name="PlanetMainElements">
+            <StatDetail Name="H₂" Min="70" Max="80" />
+            <StatDetail Name="He" Min="10" Max="20" />
+            <StatDetail Name="Si" Min="5" Max="10" />
+            <StatDetail Name="Fe" Min="5" Max="10" />
+        </Stat >
+        <Stat Name="CoreType" Value="%PlanetCoreTypeStonyTitle" />
+    </GuiPlanetTypeBaseStats>
+
+<!--City-->
+    <GuiPlanetTypeBaseStats Name="PlanetTypeCustom05">
+        <Stat Name="MeanRadius" Min="5000" Max="7000" />
+        <Stat Name="Mass" Min="3" Max="9" />
+        <Stat Name="SurfaceGravity" Min="8" Max="12" />
+        <Stat Name="OrbitalPeriod" Min="100" Max="300" />
+        <Stat Name="RotationPeriod" Min="0.5" Max="2" />
+        <Stat Name="AtmosphereComposition">
+            <StatDetail Name="N₂" Min="70" Max="90" />
+            <StatDetail Name="O₂" Min="15" Max="25" />
+            <StatDetail Name="Ar" Min="1" Max="3" />
+            <StatDetail Name="H₂" Min="0" Max="1" />
+            <StatDetail Name="H₂O" Min="1" Max="2" />
+            <StatDetail Name="CO₂" Min="1" Max="1" />
+            <StatDetail Name="SO₂" Min="0" Max="1" />
+            <StatDetail Name="CH₄" Min="0" Max="1" />
+            <StatDetail Name="NO₂" Min="1" Max="1" />
+        </Stat>
+        <Stat Name="AtmospherePressure" Min="0.9" Max="1.1" />
+        <Stat Name="AtmosphereTemperature" Min="290" Max="295" />
+        <Stat Name="PlanetMainElements">
+            <StatDetail Name="Fe" Min="30" Max="40" />
+            <StatDetail Name="O" Min="25" Max="35" />
+            <StatDetail Name="Si" Min="25" Max="35" />
+            <StatDetail Name="Mg" Min="10" Max="20" />
+            <StatDetail Name="S" Min="1" Max="3" />
+            <StatDetail Name="Ni" Min="1" Max="3" />
+            <StatDetail Name="Ca" Min="1" Max="2" />
+            <StatDetail Name="Al" Min="1" Max="2" />
+        </Stat >
+        <Stat Name="CoreType" Value="%PlanetCoreTypeMetallicTitle" />
+    </GuiPlanetTypeBaseStats>
+
+<!--Farm-->
+    <GuiPlanetTypeBaseStats Name="PlanetTypeCustom06">
+        <Stat Name="MeanRadius" Min="5000" Max="7000" />
+        <Stat Name="Mass" Min="3" Max="9" />
+        <Stat Name="SurfaceGravity" Min="8" Max="12" />
+        <Stat Name="OrbitalPeriod" Min="100" Max="300" />
+        <Stat Name="RotationPeriod" Min="0.5" Max="2" />
+        <Stat Name="AtmosphereComposition">
+            <StatDetail Name="N₂" Min="70" Max="90" />
+            <StatDetail Name="O₂" Min="15" Max="25" />
+            <StatDetail Name="Ar" Min="1" Max="3" />
+            <StatDetail Name="H₂" Min="0" Max="1" />
+            <StatDetail Name="H₂O" Min="1" Max="2" />
+            <StatDetail Name="CO₂" Min="0" Max="1" />
+            <StatDetail Name="SO₂" Min="0" Max="1" />
+            <StatDetail Name="CH₄" Min="1" Max="1" />
+        </Stat>
+        <Stat Name="AtmospherePressure" Min="0.9" Max="1.1" />
+        <Stat Name="AtmosphereTemperature" Min="290" Max="295" />
+        <Stat Name="PlanetMainElements">
+            <StatDetail Name="Fe" Min="30" Max="40" />
+            <StatDetail Name="O" Min="25" Max="35" />
+            <StatDetail Name="Si" Min="25" Max="35" />
+            <StatDetail Name="Mg" Min="10" Max="20" />
+            <StatDetail Name="S" Min="1" Max="3" />
+            <StatDetail Name="Ni" Min="1" Max="3" />
+            <StatDetail Name="Ca" Min="1" Max="2" />
+            <StatDetail Name="Al" Min="1" Max="2" />
+        </Stat >
+        <Stat Name="CoreType" Value="%PlanetCoreTypeMetallicTitle" />
+    </GuiPlanetTypeBaseStats>
+
+<!--Garbage-->
+    <GuiPlanetTypeBaseStats Name="PlanetTypeCustom07">
+        <Stat Name="MeanRadius" Min="5000" Max="7000" />
+        <Stat Name="Mass" Min="3" Max="9" />
+        <Stat Name="SurfaceGravity" Min="8" Max="12" />
+        <Stat Name="OrbitalPeriod" Min="100" Max="300" />
+        <Stat Name="RotationPeriod" Min="0.5" Max="2" />
+        <Stat Name="AtmosphereComposition">
+            <StatDetail Name="N₂" Min="70" Max="90" />
+            <StatDetail Name="O₂" Min="15" Max="25" />
+            <StatDetail Name="Ar" Min="1" Max="3" />
+            <StatDetail Name="H₂" Min="0" Max="1" />
+            <StatDetail Name="H₂O" Min="1" Max="2" />
+            <StatDetail Name="CO₂" Min="1" Max="1" />
+            <StatDetail Name="SO₂" Min="0" Max="1" />
+            <StatDetail Name="CH₄" Min="0" Max="1" />
+            <StatDetail Name="NO₂" Min="1" Max="1" />
+        </Stat>
+        <Stat Name="AtmospherePressure" Min="0.9" Max="1.1" />
+        <Stat Name="AtmosphereTemperature" Min="290" Max="295" />
+        <Stat Name="PlanetMainElements">
+            <StatDetail Name="Fe" Min="30" Max="40" />
+            <StatDetail Name="O" Min="25" Max="35" />
+            <StatDetail Name="Si" Min="25" Max="35" />
+            <StatDetail Name="Mg" Min="10" Max="20" />
+            <StatDetail Name="S" Min="1" Max="3" />
+            <StatDetail Name="Ni" Min="1" Max="3" />
+            <StatDetail Name="Ca" Min="1" Max="2" />
+            <StatDetail Name="Al" Min="1" Max="2" />
+        </Stat >
+        <Stat Name="CoreType" Value="%PlanetCoreTypeMetallicTitle" />
+    </GuiPlanetTypeBaseStats>
+
+<!--Polluted (4 pop, 20 FIDSI)-->
+    <GuiPlanetTypeBaseStats Name="PlanetTypeCustom08">
+        <Stat Name="MeanRadius" Min="5000" Max="7000" />
+        <Stat Name="Mass" Min="3" Max="9" />
+        <Stat Name="SurfaceGravity" Min="8" Max="12" />
+        <Stat Name="OrbitalPeriod" Min="100" Max="300" />
+        <Stat Name="RotationPeriod" Min="0.5" Max="2" />
+        <Stat Name="AtmosphereComposition">
+            <StatDetail Name="N₂" Min="70" Max="90" />
+            <StatDetail Name="O₂" Min="15" Max="25" />
+            <StatDetail Name="Ar" Min="1" Max="3" />
+            <StatDetail Name="H₂" Min="0" Max="1" />
+            <StatDetail Name="H₂O" Min="1" Max="2" />
+            <StatDetail Name="CO₂" Min="1" Max="1" />
+            <StatDetail Name="SO₂" Min="0" Max="1" />
+            <StatDetail Name="CH₄" Min="0" Max="1" />
+            <StatDetail Name="NO₂" Min="1" Max="1" />
+        </Stat>
+        <Stat Name="AtmospherePressure" Min="0.9" Max="1.1" />
+        <Stat Name="AtmosphereTemperature" Min="290" Max="295" />
+        <Stat Name="PlanetMainElements">
+            <StatDetail Name="Fe" Min="30" Max="40" />
+            <StatDetail Name="O" Min="25" Max="35" />
+            <StatDetail Name="Si" Min="25" Max="35" />
+            <StatDetail Name="Mg" Min="10" Max="20" />
+            <StatDetail Name="S" Min="1" Max="3" />
+            <StatDetail Name="Ni" Min="1" Max="3" />
+            <StatDetail Name="Ca" Min="1" Max="2" />
+            <StatDetail Name="Al" Min="1" Max="2" />
+        </Stat >
+        <Stat Name="CoreType" Value="%PlanetCoreTypeMetallicTitle" />
+    </GuiPlanetTypeBaseStats>
+
+</Datatable>

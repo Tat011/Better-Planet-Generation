@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/ScienceConstructibleElement.xsd">
+<!--Off-World Agribusiness-->
+  <TechnologyDefinition Name="TechnologyDefinitionEmpireDevelopment1" TechnologyStage="TechnologyStageDefinitionEmpireDevelopment1" Category="CategoryTechnologyEmpireDevelopment" ScoreProvider="TechnologyUnlocked">
+    <CustomCost ResourceName="EmpireResearch">Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCurrentCost) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostStage1Multiplier) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostQuadrantEmpireDevelopmentMultiplier)</CustomCost>
+    <PathPrerequisite Flags="Prerequisite,Discard,DiplomaticTradable" Inverted="true">ClassEmpire,AffinityMappingHoratio</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,DiplomaticTradable" Inverted="true">ClassEmpire,AffinityGameplayMajorHisshos</PathPrerequisite>
+
+    <SimulationDescriptorReference Name="TechnologyColonizationGarbagePlanet"/>
+    <SimulationDescriptorReference Name="TechnologyMinorFactionsGameplay"/>
+    <SimulationDescriptorReference Name="TechnologyMinorFactionsGameplayCommon"/>
+    <SimulationDescriptorReference Name="TechnologyLinkFrom1Unfallen"/>
+    <SimulationDescriptorReference Name="TechnologyLinkFrom1TimeLords"/>
+    <SimulationDescriptorReference Name="TechnologyApproval1"/>
+    <SimulationDescriptorReference Name="TechnologyCountEmpireDevelopmentIncreaseStage1"/>
+    <SimulationDescriptorReference Name="TechnologyCounter"/>
+    <PopulationEvent Name="PopulationPoliticalEventReligiousTechnology"/>
+
+    <HelperVariable Name="AvailableGarbagePlanetPlanets"/>
+    <HelperVariable Name="MinorEmpiresDiplomacyVariable"/>
+    <HelperVariable Name="HappinessVariable"/>
+    <HelperFormula>10 * $(MinorEmpiresDiplomacyVariable) + 10 * $(HappinessVariable) + 1 * $(AvailableGarbagePlanetPlanets)</HelperFormula>
+  </TechnologyDefinition>
+
+  <TechnologyDefinition Name="TechnologyDefinitionEmpireDevelopment1Horatio" TechnologyStage="TechnologyStageDefinitionEmpireDevelopment1" Category="CategoryTechnologyEmpireDevelopment" ScoreProvider="TechnologyUnlocked">
+    <CustomCost ResourceName="EmpireResearch">Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCurrentCost) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostStage1Multiplier) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostQuadrantEmpireDevelopmentMultiplier)</CustomCost>
+    <PathPrerequisite Flags="Prerequisite,Discard,DiplomaticTradable,Faction,AffinityHoratio">ClassEmpire,AffinityMappingHoratio</PathPrerequisite>
+
+    <SimulationDescriptorReference Name="TechnologyColonizationGarbagePlanet"/>
+    <SimulationDescriptorReference Name="TechnologyMinorFactionsGameplay"/>
+    <SimulationDescriptorReference Name="TechnologyMinorFactionsGameplayHoratio"/>
+    <SimulationDescriptorReference Name="TechnologyApproval1"/>
+    <SimulationDescriptorReference Name="TechnologyCountEmpireDevelopmentIncreaseStage1"/>
+    <SimulationDescriptorReference Name="TechnologyCounter"/>
+    <PopulationEvent Name="PopulationPoliticalEventReligiousTechnology"/>
+
+    <HelperVariable Name="AvailableGarbagePlanetPlanets"/>
+    <HelperVariable Name="MinorEmpiresDiplomacyVariable"/>
+    <HelperVariable Name="HappinessVariable"/>
+    <HelperFormula>15 * $(MinorEmpiresDiplomacyVariable) + 10 * $(HappinessVariable) + 1 * $(AvailableGarbagePlanetPlanets)</HelperFormula>
+  </TechnologyDefinition>
+
+  <TechnologyDefinition Name="TechnologyDefinitionEmpireDevelopment1MajorHisshos" TechnologyStage="TechnologyStageDefinitionEmpireDevelopment1" Category="CategoryTechnologyEmpireDevelopment" ScoreProvider="TechnologyUnlocked">
+    <CustomCost ResourceName="EmpireResearch">Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCurrentCost) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostStage1Multiplier) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostQuadrantEmpireDevelopmentMultiplier)</CustomCost>
+    <PathPrerequisite Flags="Prerequisite,Discard,DiplomaticTradable,Faction,AffinityGameplayTechnologyMajorHisshos">ClassEmpire,AffinityGameplayMajorHisshos</PathPrerequisite>
+
+    <SimulationDescriptorReference Name="TechnologyColonizationGarbagePlanet"/>
+    <SimulationDescriptorReference Name="TechnologyMinorFactionsGameplay"/>
+    <SimulationDescriptorReference Name="TechnologyMinorFactionsGameplayCommon"/>
+    <SimulationDescriptorReference Name="TechnologyInfluenceSpecialHisshos"/>
+    <SimulationDescriptorReference Name="TechnologyCountEmpireDevelopmentIncreaseStage1"/>
+    <SimulationDescriptorReference Name="TechnologyCounter"/>
+    <PopulationEvent Name="PopulationPoliticalEventReligiousTechnology"/>
+
+    <HelperVariable Name="AvailableGarbagePlanetPlanets"/>
+    <HelperVariable Name="MinorEmpiresDiplomacyVariable"/>
+    <HelperVariable Name="HappinessVariable"/>
+    <HelperFormula>15 * $(MinorEmpiresDiplomacyVariable) + 10 * $(HappinessVariable) + 1 * $(AvailableGarbagePlanetPlanets)</HelperFormula>
+  </TechnologyDefinition>
+
+<!--Planetary Landscaping-->
+  <TechnologyDefinition Name="TechnologyDefinitionEmpireDevelopment2" TechnologyStage="TechnologyStageDefinitionEmpireDevelopment1" Category="CategoryTechnologyEmpireDevelopment" ScoreProvider="TechnologyUnlocked">
+    <CustomCost ResourceName="EmpireResearch">Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCurrentCost) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostStage1Multiplier) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostQuadrantEmpireDevelopmentMultiplier)</CustomCost>
+
+    <SimulationDescriptorReference Name="TechnologyColonizationFarmPlanet"/>
+    <SimulationDescriptorReference Name="TechnologyUniqueFood1"/>
+    <SimulationDescriptorReference Name="TechnologyCountEmpireDevelopmentIncreaseStage1"/>
+    <SimulationDescriptorReference Name="TechnologyCounter"/>
+    <PopulationEvent Name="PopulationPoliticalEventEcologistTechnology"/>
+
+    <HelperVariable Name="AvailableFarmPlanetPlanets"/>
+    <HelperVariable Name="FoodVariable"/>
+    <HelperVariable Name="AvailablePlanets"/>
+    <HelperVariable Name="AvailableHotPlanets"/>
+    <HelperVariable Name="AvailableColdPlanets"/>
+    <HelperFormula>(10 * $(AvailablePlanets) + 5 * $(AvailableHotPlanets) + 5 * $(AvailableColdPlanets)) *$(FoodVariable) + 1 * $(AvailableFarmPlanetPlanets)</HelperFormula>
+  </TechnologyDefinition>
+
+<!--Xenology-->
+  <TechnologyDefinition Name="TechnologyDefinitionEmpireDevelopment4" TechnologyStage="TechnologyStageDefinitionEmpireDevelopment2" Category="CategoryTechnologyEmpireDevelopment" ScoreProvider="TechnologyUnlocked">
+    <CustomCost ResourceName="EmpireResearch">Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCurrentCost) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostStage2Multiplier) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostQuadrantEmpireDevelopmentMultiplier)</CustomCost>
+    <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard" Inverted="true">ClassEmpire,AffinityGameplayVampirilis</PathPrerequisite>
+
+    <SimulationDescriptorReference Name="TechnologyColonizationCityPlanet"/>
+    <SimulationDescriptorReference Name="TechnologyAcademyEmbassy"/>
+    <SimulationDescriptorReference Name="TechnologyPlanetaryInfluence1"/>
+    <SimulationDescriptorReference Name="TechnologyCountEmpireDevelopmentIncreaseStage2"/>
+    <SimulationDescriptorReference Name="TechnologyCounter"/>
+    <PopulationEvent Name="PopulationPoliticalEventReligiousTechnology"/>
+
+    <HelperVariable Name="AvailableCityPlanetPlanets"/>
+    <HelperVariable Name="InfluenceVariable"/>
+    <HelperVariable Name="AvailablePlanets"/>
+    <HelperVariable Name="TurnVariable"/>
+    <HelperFormula>20 * $(TurnVariable) + 1 * $(AvailablePlanets) * $(InfluenceVariable) + 1 * $(AvailableCityPlanetPlanets)</HelperFormula>
+  </TechnologyDefinition>
+
+  <TechnologyDefinition Name="TechnologyDefinitionEmpireDevelopment4Vampirilis" TechnologyStage="TechnologyStageDefinitionEmpireDevelopment2" Category="CategoryTechnologyEmpireDevelopment" ScoreProvider="TechnologyUnlocked">
+    <CustomCost ResourceName="EmpireResearch">Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCurrentCost) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostStage2Multiplier) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostQuadrantEmpireDevelopmentMultiplier)</CustomCost>
+    <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard,Faction,AffinityGameplayTechnologyVampirilis" Inverted="false">ClassEmpire,AffinityGameplayVampirilis</PathPrerequisite>
+
+    <SimulationDescriptorReference Name="TechnologyColonizationCityPlanet"/>
+    <SimulationDescriptorReference Name="TechnologyAcademyEmbassy"/>
+    <SimulationDescriptorReference Name="TechnologyCountEmpireDevelopmentIncreaseStage2"/>
+    <SimulationDescriptorReference Name="TechnologyCounter"/>
+    <PopulationEvent Name="PopulationPoliticalEventReligiousTechnology"/>
+
+    <HelperVariable Name="AvailableCityPlanetPlanets"/>
+    <HelperVariable Name="TurnVariable"/>
+    <HelperFormula>20 * $(TurnVariable) + 1 * $(AvailableCityPlanetPlanets)</HelperFormula>
+  </TechnologyDefinition>
+
+<!--HyperPACs-->
+  <TechnologyDefinition Name="TechnologyDefinitionEmpireDevelopment17" TechnologyStage="TechnologyStageDefinitionEmpireDevelopment3" Category="CategoryTechnologyEmpireDevelopment" ScoreProvider="TechnologyUnlocked">
+    <CustomCost ResourceName="EmpireResearch">Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCurrentCost) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostStage3Multiplier) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostQuadrantEmpireDevelopmentMultiplier) * (1 - (Property(StockLocation,@ClassEmpire/ClassResearch , TechnologyLinkReductionValue) * Count(StockLocation, @'ClassEmpire/ClassResearch,TechnologyLinkEmpireDevelopment5To17')))</CustomCost>
+    <InterpreterPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard" Inverted="true">Path(Context,@'AffinityMappingTerrans') or Path(Context,@'AffinityMappingSheredyn') or Path(Context,@'AffinityMappingMezari')</InterpreterPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard" Inverted="true">ClassEmpire,AffinityGameplayTimeLords</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard" Inverted="true">ClassEmpire,AffinityGameplayUnfallen</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard" Inverted="true">ClassEmpire,AffinityGameplayTemplars</PathPrerequisite>
+
+    <SimulationDescriptorReference Name="TechnologyColonizationPollutedPlanet"/>
+    <SimulationDescriptorReference Name="TechnologyDiplomacyAlliance"  />
+    <SimulationDescriptorReference Name="TechnologyDiplomacy2Common"  />
+    <SimulationDescriptorReference Name="TechnologyElectionAction"  />
+    <SimulationDescriptorReference Name="TechnologyLinkTo17Common"  />
+    <SimulationDescriptorReference Name="TechnologyLinkTo12Venetians"  />
+    <SimulationDescriptorReference Name="TechnologyColonization10"/>
+    <SimulationDescriptorReference Name="TechnologyCountEmpireDevelopmentIncreaseStage3"   />
+    <SimulationDescriptorReference Name="TechnologyCounter" />
+    <PopulationEvent Name="PopulationPoliticalEventReligiousTechnology"/>
+
+    <HelperVariable Name="AvailablePollutedPlanetPlanets"/>
+    <HelperVariable Name="HappinessVariable"/>
+    <HelperVariable Name="AvailableSwampPlanets"/>
+    <HelperVariable Name="TurnVariable"/>
+    <HelperFormula>10 * $(TurnVariable) * $(HappinessVariable) + 1 * $(AvailableSwampPlanets) + 1 * $(AvailablePollutedPlanetPlanets)</HelperFormula>
+  </TechnologyDefinition>
+
+  <TechnologyDefinition Name="TechnologyDefinitionEmpireDevelopment17Unfallen" TechnologyStage="TechnologyStageDefinitionEmpireDevelopment3" Category="CategoryTechnologyEmpireDevelopment" ScoreProvider="TechnologyUnlocked">
+    <CustomCost ResourceName="EmpireResearch">Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCurrentCost) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostStage3Multiplier) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostQuadrantEmpireDevelopmentMultiplier) * (1 - (Property(StockLocation,@ClassEmpire/ClassResearch , TechnologyLinkReductionValue) * Count(StockLocation, @'ClassEmpire/ClassResearch,TechnologyLinkEmpireDevelopment5To17')))</CustomCost>
+    <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard,Faction,AffinityGameplayTechnologyUnfallen" Inverted="false">ClassEmpire,AffinityGameplayUnfallen</PathPrerequisite>
+    <InterpreterPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard" Inverted="true">Path(Context,@'AffinityMappingTerrans') or Path(Context,@'AffinityMappingSheredyn') or Path(Context,@'AffinityMappingMezari')</InterpreterPrerequisite>
+
+    <SimulationDescriptorReference Name="TechnologyColonizationPollutedPlanet"/>
+    <SimulationDescriptorReference Name="TechnologyDiplomacyAlliance"  />
+    <SimulationDescriptorReference Name="TechnologyDiplomacy2Common"  />
+    <SimulationDescriptorReference Name="TechnologyElectionAction"  />
+    <SimulationDescriptorReference Name="TechnologyColonization10Unfallen"/>
+    <SimulationDescriptorReference Name="TechnologyLinkTo17Unfallen"  />
+    <SimulationDescriptorReference Name="TechnologyLinkTo12VenetiansUnfallen"  />
+    <SimulationDescriptorReference Name="TechnologyCountEmpireDevelopmentIncreaseStage3"   />
+    <SimulationDescriptorReference Name="TechnologyCounter" />
+    <PopulationEvent Name="PopulationPoliticalEventReligiousTechnology"/>
+
+    <HelperVariable Name="AvailablePollutedPlanetPlanets"/>
+    <HelperVariable Name="HappinessVariable"/>
+    <HelperVariable Name="AvailableSwampPlanets"/>
+    <HelperVariable Name="TurnVariable"/>
+    <HelperFormula>10 * $(TurnVariable) * $(HappinessVariable) + 1 * $(AvailableSwampPlanets) + 1 * $(AvailablePollutedPlanetPlanets)</HelperFormula>
+  </TechnologyDefinition>
+
+  <TechnologyDefinition Name="TechnologyDefinitionEmpireDevelopment17TimeLords" TechnologyStage="TechnologyStageDefinitionEmpireDevelopment3" Category="CategoryTechnologyEmpireDevelopment" ScoreProvider="TechnologyUnlocked">
+    <CustomCost ResourceName="EmpireResearch">Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCurrentCost) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostStage3Multiplier) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostQuadrantEmpireDevelopmentMultiplier) * (1 - (Property(StockLocation,@ClassEmpire/ClassResearch , TechnologyLinkReductionValue) * Count(StockLocation, @'ClassEmpire/ClassResearch,TechnologyLinkEmpireDevelopment5To17')))</CustomCost>
+    <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard,Faction,AffinityGameplayTechnologyTimeLords" Inverted="false">ClassEmpire,AffinityGameplayTimeLords</PathPrerequisite>
+    <InterpreterPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard" Inverted="true">Path(Context,@'AffinityMappingTerrans') or Path(Context,@'AffinityMappingSheredyn') or Path(Context,@'AffinityMappingMezari')</InterpreterPrerequisite>
+
+    <SimulationDescriptorReference Name="TechnologyColonizationPollutedPlanet"/>
+    <SimulationDescriptorReference Name="TechnologyDiplomacyAlliance"  />
+    <SimulationDescriptorReference Name="TechnologyDiplomacy2Common"  />
+    <SimulationDescriptorReference Name="TechnologyElectionAction"  />
+    <SimulationDescriptorReference Name="TechnologyColonization10TimeLords"/>
+    <SimulationDescriptorReference Name="TechnologyLinkTo17TimeLords"  />
+    <SimulationDescriptorReference Name="TechnologyLinkTo12VenetiansTimeLords"  />
+    <SimulationDescriptorReference Name="TechnologyCountEmpireDevelopmentIncreaseStage3"   />
+    <SimulationDescriptorReference Name="TechnologyCounter" />
+    <PopulationEvent Name="PopulationPoliticalEventReligiousTechnology"/>
+
+    <HelperVariable Name="AvailablePollutedPlanetPlanets"/>
+    <HelperVariable Name="HappinessVariable"/>
+    <HelperVariable Name="AvailableOceanPlanets"/>
+    <HelperVariable Name="TurnVariable"/>
+    <HelperFormula>10 * $(TurnVariable) * $(HappinessVariable) + 1 * $(AvailableSwampPlanets) + 1 * $(AvailablePollutedPlanetPlanets)</HelperFormula>
+  </TechnologyDefinition>
+
+  <TechnologyDefinition Name="TechnologyDefinitionEmpireDevelopment17Terrans" TechnologyStage="TechnologyStageDefinitionEmpireDevelopment3" Category="CategoryTechnologyEmpireDevelopment" ScoreProvider="TechnologyUnlocked">
+    <CustomCost ResourceName="EmpireResearch">Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCurrentCost) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostStage3Multiplier) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostQuadrantEmpireDevelopmentMultiplier) * (1 - (Property(StockLocation,@ClassEmpire/ClassResearch , TechnologyLinkReductionValue) * Count(StockLocation, @'ClassEmpire/ClassResearch,TechnologyLinkEmpireDevelopment5To17')))</CustomCost>
+    <InterpreterPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard,Faction,AffinityTerrans" Inverted="false">Path(Context,@'AffinityMappingTerrans') or Path(Context,@'AffinityMappingSheredyn') or Path(Context,@'AffinityMappingMezari')</InterpreterPrerequisite>
+
+    <SimulationDescriptorReference Name="TechnologyColonizationPollutedPlanet"/>
+    <SimulationDescriptorReference Name="TechnologyDiplomacyAlliance"  />
+    <SimulationDescriptorReference Name="TechnologyDiplomacy2Common"  />
+    <SimulationDescriptorReference Name="TechnologyElectionAction"  />
+    <SimulationDescriptorReference Name="TechnologyColonization10"/>
+    <SimulationDescriptorReference Name="TechnologyLinkTo17Terrans"  />
+    <SimulationDescriptorReference Name="TechnologyCountEmpireDevelopmentIncreaseStage3"   />
+    <SimulationDescriptorReference Name="TechnologyCounter" />
+    <PopulationEvent Name="PopulationPoliticalEventReligiousTechnology"/>
+
+    <HelperVariable Name="AvailablePollutedPlanetPlanets"/>
+    <HelperVariable Name="HappinessVariable"/>
+    <HelperVariable Name="AvailableSwampPlanets"/>
+    <HelperVariable Name="TurnVariable"/>
+    <HelperFormula>10 * $(TurnVariable) * $(HappinessVariable) + 1 * $(AvailableSwampPlanets) + 1 * $(AvailablePollutedPlanetPlanets)</HelperFormula>
+  </TechnologyDefinition>
+
+  <TechnologyDefinition Name="TechnologyDefinitionEmpireDevelopment17TerransUnfallen" TechnologyStage="TechnologyStageDefinitionEmpireDevelopment3" Category="CategoryTechnologyEmpireDevelopment" ScoreProvider="TechnologyUnlocked">
+    <CustomCost ResourceName="EmpireResearch">Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCurrentCost) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostStage3Multiplier) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostQuadrantEmpireDevelopmentMultiplier) * (1 - (Property(StockLocation,@ClassEmpire/ClassResearch , TechnologyLinkReductionValue) * Count(StockLocation, @'ClassEmpire/ClassResearch,TechnologyLinkEmpireDevelopment5To17')))</CustomCost>
+    <InterpreterPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard,Faction,AffinityTerrans" Inverted="false">Path(Context,@'AffinityMappingTerrans') or Path(Context,@'AffinityMappingSheredyn') or Path(Context,@'AffinityMappingMezari')</InterpreterPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard" Inverted="false">ClassEmpire,AffinityGameplayUnfallen</PathPrerequisite>
+
+    <SimulationDescriptorReference Name="TechnologyColonizationPollutedPlanet"/>
+    <SimulationDescriptorReference Name="TechnologyDiplomacyAlliance"  />
+    <SimulationDescriptorReference Name="TechnologyDiplomacy2Common"  />
+    <SimulationDescriptorReference Name="TechnologyElectionAction"  />
+    <SimulationDescriptorReference Name="TechnologyColonization10Unfallen"/>
+    <SimulationDescriptorReference Name="TechnologyLinkTo17TerransUnfallen"/>
+    <SimulationDescriptorReference Name="TechnologyCountEmpireDevelopmentIncreaseStage3"   />
+    <SimulationDescriptorReference Name="TechnologyCounter" />
+    <PopulationEvent Name="PopulationPoliticalEventReligiousTechnology"/>
+
+    <HelperVariable Name="AvailablePollutedPlanetPlanets"/>
+    <HelperVariable Name="HappinessVariable"/>
+    <HelperVariable Name="AvailableSwampPlanets"/>
+    <HelperVariable Name="TurnVariable"/>
+    <HelperFormula>10 * $(TurnVariable) * $(HappinessVariable) + 1 * $(AvailableSwampPlanets) + 1 * $(AvailablePollutedPlanetPlanets)</HelperFormula>
+  </TechnologyDefinition>
+
+  <TechnologyDefinition Name="TechnologyDefinitionEmpireDevelopment17TerransTimeLords" TechnologyStage="TechnologyStageDefinitionEmpireDevelopment3" Category="CategoryTechnologyEmpireDevelopment" ScoreProvider="TechnologyUnlocked">
+    <CustomCost ResourceName="EmpireResearch">Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCurrentCost) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostStage3Multiplier) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostQuadrantEmpireDevelopmentMultiplier) * (1 - (Property(StockLocation,@ClassEmpire/ClassResearch , TechnologyLinkReductionValue) * Count(StockLocation, @'ClassEmpire/ClassResearch,TechnologyLinkEmpireDevelopment5To17')))</CustomCost>
+    <InterpreterPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard,Faction,AffinityTerrans" Inverted="false">Path(Context,@'AffinityMappingTerrans') or Path(Context,@'AffinityMappingSheredyn') or Path(Context,@'AffinityMappingMezari')</InterpreterPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard" Inverted="false">ClassEmpire,AffinityGameplayTimeLords</PathPrerequisite>
+
+    <SimulationDescriptorReference Name="TechnologyColonizationPollutedPlanet"/>
+    <SimulationDescriptorReference Name="TechnologyDiplomacyAlliance"  />
+    <SimulationDescriptorReference Name="TechnologyDiplomacy2Common"  />
+    <SimulationDescriptorReference Name="TechnologyElectionAction"  />
+    <SimulationDescriptorReference Name="TechnologyColonization10TimeLords"/>
+    <SimulationDescriptorReference Name="TechnologyLinkTo17TerransTimeLords"/>
+    <SimulationDescriptorReference Name="TechnologyCountEmpireDevelopmentIncreaseStage3"   />
+    <SimulationDescriptorReference Name="TechnologyCounter" />
+    <PopulationEvent Name="PopulationPoliticalEventReligiousTechnology"/>
+
+    <HelperVariable Name="AvailablePollutedPlanetPlanets"/>
+    <HelperVariable Name="HappinessVariable"/>
+    <HelperVariable Name="AvailableOceanPlanets"/>
+    <HelperVariable Name="TurnVariable"/>
+    <HelperFormula>10 * $(TurnVariable) * $(HappinessVariable) + 1 * $(AvailableSwampPlanets) + 1 * $(AvailablePollutedPlanetPlanets)</HelperFormula>
+  </TechnologyDefinition>
+
+  <TechnologyDefinition Name="TechnologyDefinitionEmpireDevelopment17Templars" TechnologyStage="TechnologyStageDefinitionEmpireDevelopment3" Category="CategoryTechnologyEmpireDevelopment" ScoreProvider="TechnologyUnlocked">
+    <CustomCost ResourceName="EmpireResearch">Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCurrentCost) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostStage3Multiplier) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostQuadrantEmpireDevelopmentMultiplier) * (1 - (Property(StockLocation,@ClassEmpire/ClassResearch , TechnologyLinkReductionValue) * Count(StockLocation, @'ClassEmpire/ClassResearch,TechnologyLinkEmpireDevelopment5To17')))</CustomCost>
+    <InterpreterPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard" Inverted="true">Path(Context,@'AffinityMappingTerrans') or Path(Context,@'AffinityMappingSheredyn') or Path(Context,@'AffinityMappingMezari')</InterpreterPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard" Inverted="false">ClassEmpire,AffinityGameplayTemplars</PathPrerequisite>
+
+    <SimulationDescriptorReference Name="TechnologyColonizationPollutedPlanet"/>
+    <SimulationDescriptorReference Name="TechnologyDiplomacyAlliance"  />
+    <SimulationDescriptorReference Name="TechnologyDiplomacy2Templars"  />
+    <SimulationDescriptorReference Name="TechnologyElectionAction"  />
+    <SimulationDescriptorReference Name="TechnologyLinkTo17Common"  />
+    <SimulationDescriptorReference Name="TechnologyLinkTo12Venetians"  />
+    <SimulationDescriptorReference Name="TechnologyColonization10"/>
+    <SimulationDescriptorReference Name="TechnologyCountEmpireDevelopmentIncreaseStage3"   />
+    <SimulationDescriptorReference Name="TechnologyCounter" />
+    <PopulationEvent Name="PopulationPoliticalEventReligiousTechnology"/>
+
+    <HelperVariable Name="AvailablePollutedPlanetPlanets"/>
+    <HelperVariable Name="HappinessVariable"/>
+    <HelperVariable Name="AvailableSwampPlanets"/>
+    <HelperVariable Name="TurnVariable"/>
+    <HelperFormula>10 * $(TurnVariable) * $(HappinessVariable) + 1 * $(AvailableSwampPlanets) + 1 * $(AvailablePollutedPlanetPlanets)</HelperFormula>
+  </TechnologyDefinition>
+
+</Datatable>

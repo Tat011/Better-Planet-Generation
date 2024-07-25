@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../../Schemas/AnomalyDefinition.xsd">
+<!-- Artificial Life -->
+  <AnomalyDefinition Name="PlanetAnomaly50" Quality="Mixed">
+    <SimulationDescriptorReference Name="PlanetAnomaly50"/>
+    <GeneratorInfo>
+      <PlanetFilterNot>PlanetAnomaly50</PlanetFilterNot>
+      <PlanetFilterMust>PlanetTypeFake</PlanetFilterMust>
+    </GeneratorInfo>
+  </AnomalyDefinition>
+
+<!-- Dust Accretor -->
+  <AnomalyDefinition Name="PlanetAnomaly51" Quality="Positive">
+    <SimulationDescriptorReference Name="PlanetAnomaly51"/>
+    <GeneratorInfo>
+      <PlanetFilterNot>PlanetAnomaly51</PlanetFilterNot>
+      <PlanetFilterMust>PlanetTypeFake</PlanetFilterMust>
+    </GeneratorInfo>
+  </AnomalyDefinition>
+
+<!-- Flickering Matter -->
+  <AnomalyDefinition Name="PlanetAnomaly52" Quality="Negative">
+    <SimulationDescriptorReference Name="PlanetAnomaly52"/>
+    <SimulationDescriptorReference Name="PlanetAnomalyMixed"/>
+    <GeneratorInfo>
+      <PlanetFilterNot>PlanetAnomaly52</PlanetFilterNot>
+      <PlanetFilterMust>PlanetTypeFake</PlanetFilterMust>
+    </GeneratorInfo>
+  </AnomalyDefinition>
+
+<!-- Pseudo-Atmosphere -->
+  <AnomalyDefinition Name="PlanetAnomaly53" Quality="Negative">
+    <SimulationDescriptorReference Name="PlanetAnomaly53"/>
+    <SimulationDescriptorReference Name="PlanetAnomalyMixed"/>
+    <GeneratorInfo>
+      <PlanetFilterNot>PlanetAnomaly53</PlanetFilterNot>
+      <PlanetFilterMust>PlanetTypeFake</PlanetFilterMust>
+    </GeneratorInfo>
+  </AnomalyDefinition>
+
+<!-- Low-Quality Foundations -->
+    <AnomalyDefinition Name="PlanetAnomaly54" Quality="Negative">
+        <SimulationDescriptorReference Name="PlanetAnomaly54"/>
+        <SimulationDescriptorReference Name="PlanetAnomalyNegative"/>
+        <GeneratorInfo>
+      <PlanetFilterNot>PlanetAnomaly54</PlanetFilterNot>
+      <PlanetFilterMust>PlanetTypeFake</PlanetFilterMust>
+        </GeneratorInfo>
+    </AnomalyDefinition>
+
+<!-- Uninhabitable Area -->
+    <AnomalyDefinition Name="PlanetAnomaly55" Quality="Negative">
+        <SimulationDescriptorReference Name="PlanetAnomaly55"/>
+        <SimulationDescriptorReference Name="PlanetAnomalyNegative"/>
+        <GeneratorInfo>
+      <PlanetFilterNot>PlanetAnomaly55</PlanetFilterNot>
+      <PlanetFilterMust>PlanetTypeFake</PlanetFilterMust>
+        </GeneratorInfo>
+    </AnomalyDefinition>
+</Datatable>

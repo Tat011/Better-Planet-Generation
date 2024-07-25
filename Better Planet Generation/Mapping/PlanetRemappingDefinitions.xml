@@ -1,0 +1,764 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Documentation/Schemas/PlanetRemappingDefinition.xsd">
+<!--Gas Fertile-->
+<PlanetRemappingDefinition Name="CustomPlanet01BattleMat">
+<!--Cloud color-->
+    <ColorReplacement Name="_CloudColor">
+        <Color Red="200" Green="255" Blue="200" Alpha="255" />
+    </ColorReplacement>
+<!--One of these determines the color of the planet in galazy view-->
+    <ColorReplacement Name="_Color">
+        <Color Red="43" Green="127" Blue="35" Alpha="255" />
+    </ColorReplacement>
+<!--Not sure what this does-->
+    <ColorReplacement Name="_Color2">
+        <Color Red="58" Green="159" Blue="43" Alpha="255" />
+    </ColorReplacement>
+<!--Planet surface texture-->
+    <MaterialTextureProperty Name="_Diffuse">
+        <TextureReplacement TextureName="Octmap_LongitudeLatitude_2048" ReplacementTextureFilePath="Textures\GasFertile_Albedo.png"/>
+        <TextureReplacement TextureName="Octmap_LongitudeLatitude_1024" ReplacementTextureFilePath="Textures\GasFertile_Albedo.png"/>
+        <TextureReplacement TextureName="Octmap_LongitudeLatitude_512" ReplacementTextureFilePath="Textures\GasFertile_Albedo.png"/>
+        <TextureReplacement TextureName="Octmap_LongitudeLatitude_256" ReplacementTextureFilePath="Textures\GasFertile_Albedo.png"/>
+        <TextureReplacement TextureName="Octmap_LongitudeLatitude_128" ReplacementTextureFilePath="Textures\GasFertile_Albedo.png"/>
+    </MaterialTextureProperty>
+<!--natural planet ilumination?-->
+    <MaterialTextureProperty Name="_Illum">
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_4096" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_2048" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_1024" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_512" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_256" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_128" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+    </MaterialTextureProperty>
+<!--Planet city texture, only shows at night when many pops-->
+    <MaterialTextureProperty Name="_Pop">
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_4096" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_2048" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_1024" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_512" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_256" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_128" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+    </MaterialTextureProperty>
+<!--Also Planet city texture?-->
+    <MaterialTextureProperty Name="_PopGradient">
+        <TextureReplacement TextureName="PL_Cold_Boreal_01_PopGradient_1024" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Cold_Boreal_01_PopGradient_512" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Cold_Boreal_01_PopGradient_256" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Cold_Boreal_01_PopGradient_128" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+    </MaterialTextureProperty>
+</PlanetRemappingDefinition>
+
+<PlanetRemappingDefinition Name="CustomPlanet01Mat">
+    <ColorReplacement Name="_CloudColor">
+        <Color Red="200" Green="255" Blue="200" Alpha="255" />
+    </ColorReplacement>
+
+    <ColorReplacement Name="_Color">
+        <Color Red="43" Green="127" Blue="35" Alpha="255" />
+    </ColorReplacement>
+
+    <ColorReplacement Name="_Color2">
+        <Color Red="58" Green="159" Blue="43" Alpha="255" />
+    </ColorReplacement>
+
+    <MaterialTextureProperty Name="_Diffuse">
+        <TextureReplacement TextureName="Octmap_LongitudeLatitude_2048" ReplacementTextureFilePath="Textures\GasFertile_Albedo.png"/>
+        <TextureReplacement TextureName="Octmap_LongitudeLatitude_1024" ReplacementTextureFilePath="Textures\GasFertile_Albedo.png"/>
+        <TextureReplacement TextureName="Octmap_LongitudeLatitude_512" ReplacementTextureFilePath="Textures\GasFertile_Albedo.png"/>
+        <TextureReplacement TextureName="Octmap_LongitudeLatitude_256" ReplacementTextureFilePath="Textures\GasFertile_Albedo.png"/>
+        <TextureReplacement TextureName="Octmap_LongitudeLatitude_128" ReplacementTextureFilePath="Textures\GasFertile_Albedo.png"/>
+    </MaterialTextureProperty>
+
+    <MaterialTextureProperty Name="_Illum">
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_4096" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_2048" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_1024" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_512" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_256" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_128" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+    </MaterialTextureProperty>
+
+    <MaterialTextureProperty Name="_Pop">
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_4096" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_2048" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_1024" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_512" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_256" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_128" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+    </MaterialTextureProperty>
+
+    <MaterialTextureProperty Name="_PopGradient">
+        <TextureReplacement TextureName="PL_Cold_Boreal_01_PopGradient_1024" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Cold_Boreal_01_PopGradient_512" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Cold_Boreal_01_PopGradient_256" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Cold_Boreal_01_PopGradient_128" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+    </MaterialTextureProperty>
+</PlanetRemappingDefinition>
+
+<!--Gas Overgrown-->
+<PlanetRemappingDefinition Name="CustomPlanet02BattleMat">
+    <ColorReplacement Name="_CloudColor">
+        <Color Red="180" Green="255" Blue="180" Alpha="255" />
+    </ColorReplacement>
+    
+    <ColorReplacement Name="_Color">
+        <Color Red="43" Green="127" Blue="35" Alpha="255" />
+    </ColorReplacement>
+
+    <ColorReplacement Name="_Color2">
+        <Color Red="58" Green="159" Blue="43" Alpha="255" />
+    </ColorReplacement>
+
+    <MaterialTextureProperty Name="_Diffuse">
+        <TextureReplacement TextureName="Octmap_LongitudeLatitude_2048" ReplacementTextureFilePath="Textures\GasOvergrown_Albedo.png"/>
+        <TextureReplacement TextureName="Octmap_LongitudeLatitude_1024" ReplacementTextureFilePath="Textures\GasOvergrown_Albedo.png"/>
+        <TextureReplacement TextureName="Octmap_LongitudeLatitude_512" ReplacementTextureFilePath="Textures\GasOvergrown_Albedo.png"/>
+        <TextureReplacement TextureName="Octmap_LongitudeLatitude_256" ReplacementTextureFilePath="Textures\GasOvergrown_Albedo.png"/>
+        <TextureReplacement TextureName="Octmap_LongitudeLatitude_128" ReplacementTextureFilePath="Textures\GasOvergrown_Albedo.png"/>
+    </MaterialTextureProperty>
+
+    <MaterialTextureProperty Name="_Illum">
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_4096" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_2048" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_1024" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_512" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_256" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_128" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+    </MaterialTextureProperty>
+
+    <MaterialTextureProperty Name="_Pop">
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_4096" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_2048" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_1024" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_512" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_256" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_128" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+    </MaterialTextureProperty>
+
+    <MaterialTextureProperty Name="_PopGradient">
+        <TextureReplacement TextureName="PL_Cold_Boreal_01_PopGradient_1024" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Cold_Boreal_01_PopGradient_512" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Cold_Boreal_01_PopGradient_256" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Cold_Boreal_01_PopGradient_128" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+    </MaterialTextureProperty>
+</PlanetRemappingDefinition>
+
+<PlanetRemappingDefinition Name="CustomPlanet02Mat">
+    <ColorReplacement Name="_CloudColor">
+        <Color Red="180" Green="255" Blue="180" Alpha="255" />
+    </ColorReplacement>
+
+    <ColorReplacement Name="_Color">
+        <Color Red="43" Green="127" Blue="35" Alpha="255" />
+    </ColorReplacement>
+
+    <ColorReplacement Name="_Color2">
+        <Color Red="58" Green="159" Blue="43" Alpha="255" />
+    </ColorReplacement>
+
+    <MaterialTextureProperty Name="_Diffuse">
+        <TextureReplacement TextureName="Octmap_LongitudeLatitude_2048" ReplacementTextureFilePath="Textures\GasOvergrown_Albedo.png"/>
+        <TextureReplacement TextureName="Octmap_LongitudeLatitude_1024" ReplacementTextureFilePath="Textures\GasOvergrown_Albedo.png"/>
+        <TextureReplacement TextureName="Octmap_LongitudeLatitude_512" ReplacementTextureFilePath="Textures\GasOvergrown_Albedo.png"/>
+        <TextureReplacement TextureName="Octmap_LongitudeLatitude_256" ReplacementTextureFilePath="Textures\GasOvergrown_Albedo.png"/>
+        <TextureReplacement TextureName="Octmap_LongitudeLatitude_128" ReplacementTextureFilePath="Textures\GasOvergrown_Albedo.png"/>
+    </MaterialTextureProperty>
+
+    <MaterialTextureProperty Name="_Illum">
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_4096" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_2048" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_1024" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_512" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_256" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_128" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+    </MaterialTextureProperty>
+
+    <MaterialTextureProperty Name="_Pop">
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_4096" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_2048" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_1024" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_512" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_256" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_128" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+    </MaterialTextureProperty>
+
+    <MaterialTextureProperty Name="_PopGradient">
+        <TextureReplacement TextureName="PL_Cold_Boreal_01_PopGradient_1024" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Cold_Boreal_01_PopGradient_512" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Cold_Boreal_01_PopGradient_256" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Cold_Boreal_01_PopGradient_128" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+    </MaterialTextureProperty>
+</PlanetRemappingDefinition>
+
+<!--Gas Dwarf-->
+<PlanetRemappingDefinition Name="CustomPlanet03BattleMat">
+    <ColorReplacement Name="_CloudColor">
+        <Color Red="200" Green="200" Blue="255" Alpha="255" />
+    </ColorReplacement>
+    
+    <ColorReplacement Name="_Color">
+        <Color Red="43" Green="35" Blue="127" Alpha="255" />
+    </ColorReplacement>
+
+    <ColorReplacement Name="_Color2">
+        <Color Red="58" Green="43" Blue="159" Alpha="255" />
+    </ColorReplacement>
+
+    <MaterialTextureProperty Name="_Diffuse">
+        <TextureReplacement TextureName="Octmap_LongitudeLatitude_2048" ReplacementTextureFilePath="Textures\GasDwarf_Albedo.png"/>
+        <TextureReplacement TextureName="Octmap_LongitudeLatitude_1024" ReplacementTextureFilePath="Textures\GasDwarf_Albedo.png"/>
+        <TextureReplacement TextureName="Octmap_LongitudeLatitude_512" ReplacementTextureFilePath="Textures\GasDwarf_Albedo.png"/>
+        <TextureReplacement TextureName="Octmap_LongitudeLatitude_256" ReplacementTextureFilePath="Textures\GasDwarf_Albedo.png"/>
+        <TextureReplacement TextureName="Octmap_LongitudeLatitude_128" ReplacementTextureFilePath="Textures\GasDwarf_Albedo.png"/>
+    </MaterialTextureProperty>
+
+    <MaterialTextureProperty Name="_Illum">
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_4096" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_2048" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_1024" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_512" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_256" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_128" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+    </MaterialTextureProperty>
+
+    <MaterialTextureProperty Name="_Pop">
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_4096" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_2048" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_1024" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_512" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_256" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_128" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+    </MaterialTextureProperty>
+
+    <MaterialTextureProperty Name="_PopGradient">
+        <TextureReplacement TextureName="PL_Cold_Boreal_01_PopGradient_1024" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Cold_Boreal_01_PopGradient_512" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Cold_Boreal_01_PopGradient_256" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Cold_Boreal_01_PopGradient_128" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+    </MaterialTextureProperty>
+</PlanetRemappingDefinition>
+
+<PlanetRemappingDefinition Name="CustomPlanet03Mat">
+    <ColorReplacement Name="_CloudColor">
+        <Color Red="200" Green="200" Blue="255" Alpha="255" />
+    </ColorReplacement>
+
+    <ColorReplacement Name="_Color">
+        <Color Red="43" Green="35" Blue="127" Alpha="255" />
+    </ColorReplacement>
+
+    <ColorReplacement Name="_Color2">
+        <Color Red="58" Green="43" Blue="159" Alpha="255" />
+    </ColorReplacement>
+
+    <MaterialTextureProperty Name="_Diffuse">
+        <TextureReplacement TextureName="Octmap_LongitudeLatitude_2048" ReplacementTextureFilePath="Textures\GasDwarf_Albedo.png"/>
+        <TextureReplacement TextureName="Octmap_LongitudeLatitude_1024" ReplacementTextureFilePath="Textures\GasDwarf_Albedo.png"/>
+        <TextureReplacement TextureName="Octmap_LongitudeLatitude_512" ReplacementTextureFilePath="Textures\GasDwarf_Albedo.png"/>
+        <TextureReplacement TextureName="Octmap_LongitudeLatitude_256" ReplacementTextureFilePath="Textures\GasDwarf_Albedo.png"/>
+        <TextureReplacement TextureName="Octmap_LongitudeLatitude_128" ReplacementTextureFilePath="Textures\GasDwarf_Albedo.png"/>
+    </MaterialTextureProperty>
+
+    <MaterialTextureProperty Name="_Illum">
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_4096" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_2048" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_1024" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_512" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_256" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_128" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+    </MaterialTextureProperty>
+
+    <MaterialTextureProperty Name="_Pop">
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_4096" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_2048" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_1024" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_512" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_256" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_128" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+    </MaterialTextureProperty>
+
+    <MaterialTextureProperty Name="_PopGradient">
+        <TextureReplacement TextureName="PL_Cold_Boreal_01_PopGradient_1024" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Cold_Boreal_01_PopGradient_512" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Cold_Boreal_01_PopGradient_256" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Cold_Boreal_01_PopGradient_128" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+    </MaterialTextureProperty>
+</PlanetRemappingDefinition>
+
+<!--Gas Chilly-->
+<PlanetRemappingDefinition Name="CustomPlanet04BattleMat">
+    <ColorReplacement Name="_CloudColor">
+        <Color Red="200" Green="200" Blue="255" Alpha="255" />
+    </ColorReplacement>
+
+    <ColorReplacement Name="_Color">
+        <Color Red="60" Green="20" Blue="120" Alpha="255" />
+    </ColorReplacement>
+
+    <ColorReplacement Name="_Color2">
+        <Color Red="60" Green="20" Blue="120" Alpha="255" />
+    </ColorReplacement>
+
+    <MaterialTextureProperty Name="_Diffuse">
+        <TextureReplacement TextureName="Octmap_LongitudeLatitude_2048" ReplacementTextureFilePath="Textures\GasChilly_Albedo.png"/>
+        <TextureReplacement TextureName="Octmap_LongitudeLatitude_1024" ReplacementTextureFilePath="Textures\GasChilly_Albedo.png"/>
+        <TextureReplacement TextureName="Octmap_LongitudeLatitude_512" ReplacementTextureFilePath="Textures\GasChilly_Albedo.png"/>
+        <TextureReplacement TextureName="Octmap_LongitudeLatitude_256" ReplacementTextureFilePath="Textures\GasChilly_Albedo.png"/>
+        <TextureReplacement TextureName="Octmap_LongitudeLatitude_128" ReplacementTextureFilePath="Textures\GasChilly_Albedo.png"/>
+    </MaterialTextureProperty>
+
+    <MaterialTextureProperty Name="_Illum">
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_4096" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_2048" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_1024" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_512" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_256" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_128" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+    </MaterialTextureProperty>
+
+    <MaterialTextureProperty Name="_Pop">
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_4096" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_2048" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_1024" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_512" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_256" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_128" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+    </MaterialTextureProperty>
+
+    <MaterialTextureProperty Name="_PopGradient">
+        <TextureReplacement TextureName="PL_Cold_Boreal_01_PopGradient_1024" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Cold_Boreal_01_PopGradient_512" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Cold_Boreal_01_PopGradient_256" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Cold_Boreal_01_PopGradient_128" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+    </MaterialTextureProperty>
+</PlanetRemappingDefinition>
+
+<PlanetRemappingDefinition Name="CustomPlanet04Mat">
+    <ColorReplacement Name="_CloudColor">
+        <Color Red="200" Green="200" Blue="255" Alpha="255" />
+    </ColorReplacement>
+
+    <ColorReplacement Name="_Color">
+        <Color Red="60" Green="20" Blue="120" Alpha="255" />
+    </ColorReplacement>
+
+    <ColorReplacement Name="_Color2">
+        <Color Red="60" Green="20" Blue="120" Alpha="255" />
+    </ColorReplacement>
+
+    <MaterialTextureProperty Name="_Diffuse">
+        <TextureReplacement TextureName="Octmap_LongitudeLatitude_2048" ReplacementTextureFilePath="Textures\GasChilly_Albedo.png"/>
+        <TextureReplacement TextureName="Octmap_LongitudeLatitude_1024" ReplacementTextureFilePath="Textures\GasChilly_Albedo.png"/>
+        <TextureReplacement TextureName="Octmap_LongitudeLatitude_512" ReplacementTextureFilePath="Textures\GasChilly_Albedo.png"/>
+        <TextureReplacement TextureName="Octmap_LongitudeLatitude_256" ReplacementTextureFilePath="Textures\GasChilly_Albedo.png"/>
+        <TextureReplacement TextureName="Octmap_LongitudeLatitude_128" ReplacementTextureFilePath="Textures\GasChilly_Albedo.png"/>
+    </MaterialTextureProperty>
+
+    <MaterialTextureProperty Name="_Illum">
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_4096" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_2048" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_1024" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_512" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_256" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_128" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+    </MaterialTextureProperty>
+
+    <MaterialTextureProperty Name="_Pop">
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_4096" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_2048" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_1024" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_512" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_256" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_128" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+    </MaterialTextureProperty>
+
+    <MaterialTextureProperty Name="_PopGradient">
+        <TextureReplacement TextureName="PL_Cold_Boreal_01_PopGradient_1024" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Cold_Boreal_01_PopGradient_512" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Cold_Boreal_01_PopGradient_256" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Cold_Boreal_01_PopGradient_128" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+    </MaterialTextureProperty>
+</PlanetRemappingDefinition>
+
+<!--City-->
+<PlanetRemappingDefinition Name="CustomPlanet05BattleMat">
+    <ColorReplacement Name="_CloudColor">
+        <Color Red="200" Green="200" Blue="200" Alpha="255" />
+    </ColorReplacement>
+
+    <ColorReplacement Name="_Color">
+        <Color Red="100" Green="100" Blue="100" Alpha="255" />
+    </ColorReplacement>
+
+    <ColorReplacement Name="_Color2">
+        <Color Red="100" Green="100" Blue="100" Alpha="255" />
+    </ColorReplacement>
+
+    <MaterialTextureProperty Name="_Diffuse">
+        <TextureReplacement TextureName="Octmap_LongitudeLatitude_2048" ReplacementTextureFilePath="Textures\PL_Unique_Mezan_Albedo_2048.png"/>
+        <TextureReplacement TextureName="Octmap_LongitudeLatitude_1024" ReplacementTextureFilePath="Textures\PL_Unique_Mezan_Albedo_1024.png"/>
+        <TextureReplacement TextureName="Octmap_LongitudeLatitude_512" ReplacementTextureFilePath="Textures\PL_Unique_Mezan_Albedo_1024.png"/>
+        <TextureReplacement TextureName="Octmap_LongitudeLatitude_256" ReplacementTextureFilePath="Textures\PL_Unique_Mezan_Albedo_256.png"/>
+        <TextureReplacement TextureName="Octmap_LongitudeLatitude_128" ReplacementTextureFilePath="Textures\PL_Unique_Mezan_Albedo_128.png"/>
+    </MaterialTextureProperty>
+
+    <MaterialTextureProperty Name="_Illum">
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_4096" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_2048" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_1024" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_512" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_256" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_128" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+    </MaterialTextureProperty>
+
+    <MaterialTextureProperty Name="_Pop">
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_4096" ReplacementTextureFilePath="Textures\pl_population_01_emissive_4096.png" />
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_2048" ReplacementTextureFilePath="Textures\pl_population_01_emissive_2048.png" />
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_1024" ReplacementTextureFilePath="Textures\pl_population_01_emissive_1024.png" />
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_512" ReplacementTextureFilePath="Textures\pl_population_01_emissive_1024.png" />
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_256" ReplacementTextureFilePath="Textures\pl_population_01_emissive_256.png" />
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_128" ReplacementTextureFilePath="Textures\pl_population_01_emissive_128.png" />
+    </MaterialTextureProperty>
+
+    <MaterialTextureProperty Name="_PopGradient">
+        <TextureReplacement TextureName="PL_Cold_Boreal_01_PopGradient_1024" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Cold_Boreal_01_PopGradient_512" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Cold_Boreal_01_PopGradient_256" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Cold_Boreal_01_PopGradient_128" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+    </MaterialTextureProperty>
+</PlanetRemappingDefinition>
+
+<PlanetRemappingDefinition Name="CustomPlanet05Mat">
+    <ColorReplacement Name="_CloudColor">
+        <Color Red="200" Green="200" Blue="200" Alpha="255" />
+    </ColorReplacement>
+
+    <ColorReplacement Name="_Color">
+        <Color Red="100" Green="100" Blue="100" Alpha="255" />
+    </ColorReplacement>
+
+    <ColorReplacement Name="_Color2">
+        <Color Red="100" Green="100" Blue="100" Alpha="255" />
+    </ColorReplacement>
+
+    <MaterialTextureProperty Name="_Diffuse">
+        <TextureReplacement TextureName="Octmap_LongitudeLatitude_2048" ReplacementTextureFilePath="Textures\PL_Unique_Mezan_Albedo_2048.png"/>
+        <TextureReplacement TextureName="Octmap_LongitudeLatitude_1024" ReplacementTextureFilePath="Textures\PL_Unique_Mezan_Albedo_1024.png"/>
+        <TextureReplacement TextureName="Octmap_LongitudeLatitude_512" ReplacementTextureFilePath="Textures\PL_Unique_Mezan_Albedo_1024.png"/>
+        <TextureReplacement TextureName="Octmap_LongitudeLatitude_256" ReplacementTextureFilePath="Textures\PL_Unique_Mezan_Albedo_256.png"/>
+        <TextureReplacement TextureName="Octmap_LongitudeLatitude_128" ReplacementTextureFilePath="Textures\PL_Unique_Mezan_Albedo_128.png"/>
+    </MaterialTextureProperty>
+
+    <MaterialTextureProperty Name="_Illum">
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_4096" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_2048" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_1024" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_512" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_256" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_128" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+    </MaterialTextureProperty>
+
+    <MaterialTextureProperty Name="_Pop">
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_4096" ReplacementTextureFilePath="Textures\pl_population_01_emissive_4096.png" />
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_2048" ReplacementTextureFilePath="Textures\pl_population_01_emissive_2048.png" />
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_1024" ReplacementTextureFilePath="Textures\pl_population_01_emissive_1024.png" />
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_512" ReplacementTextureFilePath="Textures\pl_population_01_emissive_1024.png" />
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_256" ReplacementTextureFilePath="Textures\pl_population_01_emissive_256.png" />
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_128" ReplacementTextureFilePath="Textures\pl_population_01_emissive_128.png" />
+    </MaterialTextureProperty>
+
+    <MaterialTextureProperty Name="_PopGradient">
+        <TextureReplacement TextureName="PL_Cold_Boreal_01_PopGradient_1024" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Cold_Boreal_01_PopGradient_512" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Cold_Boreal_01_PopGradient_256" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Cold_Boreal_01_PopGradient_128" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+    </MaterialTextureProperty>
+</PlanetRemappingDefinition>
+
+<!--Farm-->
+<PlanetRemappingDefinition Name="CustomPlanet06BattleMat">
+    <ColorReplacement Name="_CloudColor">
+        <Color Red="255" Green="255" Blue="255" Alpha="255" />
+    </ColorReplacement>
+
+    <ColorReplacement Name="_Color">
+        <Color Red="50" Green="200" Blue="50" Alpha="255" />
+    </ColorReplacement>
+
+    <ColorReplacement Name="_Color2">
+        <Color Red="50" Green="200" Blue="50" Alpha="255" />
+    </ColorReplacement>
+
+    <MaterialTextureProperty Name="_Diffuse">
+        <TextureReplacement TextureName="Octmap_LongitudeLatitude_2048" ReplacementTextureFilePath="Textures\FarmPlanet_Albedo.png"/>
+        <TextureReplacement TextureName="Octmap_LongitudeLatitude_1024" ReplacementTextureFilePath="Textures\FarmPlanet_Albedo.png"/>
+        <TextureReplacement TextureName="Octmap_LongitudeLatitude_512" ReplacementTextureFilePath="Textures\FarmPlanet_Albedo.png"/>
+        <TextureReplacement TextureName="Octmap_LongitudeLatitude_256" ReplacementTextureFilePath="Textures\FarmPlanet_Albedo.png"/>
+        <TextureReplacement TextureName="Octmap_LongitudeLatitude_128" ReplacementTextureFilePath="Textures\FarmPlanet_Albedo.png"/>
+    </MaterialTextureProperty>
+
+    <MaterialTextureProperty Name="_Illum">
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_4096" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_2048" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_1024" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_512" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_256" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_128" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+    </MaterialTextureProperty>
+
+    <MaterialTextureProperty Name="_Pop">
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_4096" ReplacementTextureFilePath="Textures\pl_population_01_emissive_4096.png" />
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_2048" ReplacementTextureFilePath="Textures\pl_population_01_emissive_2048.png" />
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_1024" ReplacementTextureFilePath="Textures\pl_population_01_emissive_1024.png" />
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_512" ReplacementTextureFilePath="Textures\pl_population_01_emissive_1024.png" />
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_256" ReplacementTextureFilePath="Textures\pl_population_01_emissive_256.png" />
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_128" ReplacementTextureFilePath="Textures\pl_population_01_emissive_128.png" />
+    </MaterialTextureProperty>
+
+    <MaterialTextureProperty Name="_PopGradient">
+        <TextureReplacement TextureName="PL_Cold_Boreal_01_PopGradient_1024" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Cold_Boreal_01_PopGradient_512" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Cold_Boreal_01_PopGradient_256" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Cold_Boreal_01_PopGradient_128" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+    </MaterialTextureProperty>
+</PlanetRemappingDefinition>
+
+<PlanetRemappingDefinition Name="CustomPlanet06Mat">
+    <ColorReplacement Name="_CloudColor">
+        <Color Red="255" Green="255" Blue="255" Alpha="255" />
+    </ColorReplacement>
+
+    <ColorReplacement Name="_Color">
+        <Color Red="50" Green="200" Blue="50" Alpha="255" />
+    </ColorReplacement>
+
+    <ColorReplacement Name="_Color2">
+        <Color Red="50" Green="200" Blue="50" Alpha="255" />
+    </ColorReplacement>
+
+    <MaterialTextureProperty Name="_Diffuse">
+        <TextureReplacement TextureName="Octmap_LongitudeLatitude_2048" ReplacementTextureFilePath="Textures\FarmPlanet_Albedo.png"/>
+        <TextureReplacement TextureName="Octmap_LongitudeLatitude_1024" ReplacementTextureFilePath="Textures\FarmPlanet_Albedo.png"/>
+        <TextureReplacement TextureName="Octmap_LongitudeLatitude_512" ReplacementTextureFilePath="Textures\FarmPlanet_Albedo.png"/>
+        <TextureReplacement TextureName="Octmap_LongitudeLatitude_256" ReplacementTextureFilePath="Textures\FarmPlanet_Albedo.png"/>
+        <TextureReplacement TextureName="Octmap_LongitudeLatitude_128" ReplacementTextureFilePath="Textures\FarmPlanet_Albedo.png"/>
+    </MaterialTextureProperty>
+
+    <MaterialTextureProperty Name="_Illum">
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_4096" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_2048" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_1024" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_512" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_256" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_128" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+    </MaterialTextureProperty>
+
+    <MaterialTextureProperty Name="_Pop">
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_4096" ReplacementTextureFilePath="Textures\pl_population_01_emissive_4096.png" />
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_2048" ReplacementTextureFilePath="Textures\pl_population_01_emissive_2048.png" />
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_1024" ReplacementTextureFilePath="Textures\pl_population_01_emissive_1024.png" />
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_512" ReplacementTextureFilePath="Textures\pl_population_01_emissive_1024.png" />
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_256" ReplacementTextureFilePath="Textures\pl_population_01_emissive_256.png" />
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_128" ReplacementTextureFilePath="Textures\pl_population_01_emissive_128.png" />
+    </MaterialTextureProperty>
+
+    <MaterialTextureProperty Name="_PopGradient">
+        <TextureReplacement TextureName="PL_Cold_Boreal_01_PopGradient_1024" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Cold_Boreal_01_PopGradient_512" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Cold_Boreal_01_PopGradient_256" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Cold_Boreal_01_PopGradient_128" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+    </MaterialTextureProperty>
+</PlanetRemappingDefinition>
+
+<!--Garbage-->
+<PlanetRemappingDefinition Name="CustomPlanet07BattleMat">
+    <ColorReplacement Name="_CloudColor">
+        <Color Red="200" Green="200" Blue="200" Alpha="255" />
+    </ColorReplacement>
+
+    <ColorReplacement Name="_Color">
+        <Color Red="150" Green="100" Blue="100" Alpha="255" />
+    </ColorReplacement>
+
+    <ColorReplacement Name="_Color2">
+        <Color Red="150" Green="100" Blue="100" Alpha="255" />
+    </ColorReplacement>
+
+    <MaterialTextureProperty Name="_Diffuse">
+        <TextureReplacement TextureName="Octmap_LongitudeLatitude_2048" ReplacementTextureFilePath="Textures\GarbagePlanet_Albedo.png"/>
+        <TextureReplacement TextureName="Octmap_LongitudeLatitude_1024" ReplacementTextureFilePath="Textures\GarbagePlanet_Albedo.png"/>
+        <TextureReplacement TextureName="Octmap_LongitudeLatitude_512" ReplacementTextureFilePath="Textures\GarbagePlanet_Albedo.png"/>
+        <TextureReplacement TextureName="Octmap_LongitudeLatitude_256" ReplacementTextureFilePath="Textures\GarbagePlanet_Albedo.png"/>
+        <TextureReplacement TextureName="Octmap_LongitudeLatitude_128" ReplacementTextureFilePath="Textures\GarbagePlanet_Albedo.png"/>
+    </MaterialTextureProperty>
+
+    <MaterialTextureProperty Name="_Illum">
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_4096" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_2048" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_1024" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_512" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_256" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_128" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+    </MaterialTextureProperty>
+
+    <MaterialTextureProperty Name="_Pop">
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_4096" ReplacementTextureFilePath="Textures\pl_population_01_emissive_4096.png" />
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_2048" ReplacementTextureFilePath="Textures\pl_population_01_emissive_2048.png" />
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_1024" ReplacementTextureFilePath="Textures\pl_population_01_emissive_1024.png" />
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_512" ReplacementTextureFilePath="Textures\pl_population_01_emissive_1024.png" />
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_256" ReplacementTextureFilePath="Textures\pl_population_01_emissive_256.png" />
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_128" ReplacementTextureFilePath="Textures\pl_population_01_emissive_128.png" />
+    </MaterialTextureProperty>
+
+    <MaterialTextureProperty Name="_PopGradient">
+        <TextureReplacement TextureName="PL_Cold_Boreal_01_PopGradient_1024" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Cold_Boreal_01_PopGradient_512" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Cold_Boreal_01_PopGradient_256" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Cold_Boreal_01_PopGradient_128" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+    </MaterialTextureProperty>
+</PlanetRemappingDefinition>
+
+<PlanetRemappingDefinition Name="CustomPlanet07Mat">
+    <ColorReplacement Name="_CloudColor">
+        <Color Red="200" Green="200" Blue="200" Alpha="255" />
+    </ColorReplacement>
+
+    <ColorReplacement Name="_Color">
+        <Color Red="150" Green="100" Blue="100" Alpha="255" />
+    </ColorReplacement>
+
+    <ColorReplacement Name="_Color2">
+        <Color Red="150" Green="100" Blue="100" Alpha="255" />
+    </ColorReplacement>
+
+    <MaterialTextureProperty Name="_Diffuse">
+        <TextureReplacement TextureName="Octmap_LongitudeLatitude_2048" ReplacementTextureFilePath="Textures\GarbagePlanet_Albedo.png"/>
+        <TextureReplacement TextureName="Octmap_LongitudeLatitude_1024" ReplacementTextureFilePath="Textures\GarbagePlanet_Albedo.png"/>
+        <TextureReplacement TextureName="Octmap_LongitudeLatitude_512" ReplacementTextureFilePath="Textures\GarbagePlanet_Albedo.png"/>
+        <TextureReplacement TextureName="Octmap_LongitudeLatitude_256" ReplacementTextureFilePath="Textures\GarbagePlanet_Albedo.png"/>
+        <TextureReplacement TextureName="Octmap_LongitudeLatitude_128" ReplacementTextureFilePath="Textures\GarbagePlanet_Albedo.png"/>
+    </MaterialTextureProperty>
+
+    <MaterialTextureProperty Name="_Illum">
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_4096" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_2048" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_1024" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_512" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_256" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_128" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+    </MaterialTextureProperty>
+
+    <MaterialTextureProperty Name="_Pop">
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_4096" ReplacementTextureFilePath="Textures\pl_population_01_emissive_4096.png" />
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_2048" ReplacementTextureFilePath="Textures\pl_population_01_emissive_2048.png" />
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_1024" ReplacementTextureFilePath="Textures\pl_population_01_emissive_1024.png" />
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_512" ReplacementTextureFilePath="Textures\pl_population_01_emissive_1024.png" />
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_256" ReplacementTextureFilePath="Textures\pl_population_01_emissive_256.png" />
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_128" ReplacementTextureFilePath="Textures\pl_population_01_emissive_128.png" />
+    </MaterialTextureProperty>
+
+    <MaterialTextureProperty Name="_PopGradient">
+        <TextureReplacement TextureName="PL_Cold_Boreal_01_PopGradient_1024" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Cold_Boreal_01_PopGradient_512" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Cold_Boreal_01_PopGradient_256" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Cold_Boreal_01_PopGradient_128" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+    </MaterialTextureProperty>
+</PlanetRemappingDefinition>
+
+<!--Polluted-->
+<PlanetRemappingDefinition Name="CustomPlanet08BattleMat">
+    <ColorReplacement Name="_CloudColor">
+        <Color Red="200" Green="200" Blue="200" Alpha="255" />
+    </ColorReplacement>
+
+    <ColorReplacement Name="_Color">
+        <Color Red="100" Green="150" Blue="100" Alpha="255" />
+    </ColorReplacement>
+
+    <ColorReplacement Name="_Color2">
+        <Color Red="100" Green="150" Blue="100" Alpha="255" />
+    </ColorReplacement>
+
+    <MaterialTextureProperty Name="_Diffuse">
+        <TextureReplacement TextureName="Octmap_LongitudeLatitude_2048" ReplacementTextureFilePath="Textures\PollutedPlanet_Albedo.png"/>
+        <TextureReplacement TextureName="Octmap_LongitudeLatitude_1024" ReplacementTextureFilePath="Textures\PollutedPlanet_Albedo.png"/>
+        <TextureReplacement TextureName="Octmap_LongitudeLatitude_512" ReplacementTextureFilePath="Textures\PollutedPlanet_Albedo.png"/>
+        <TextureReplacement TextureName="Octmap_LongitudeLatitude_256" ReplacementTextureFilePath="Textures\PollutedPlanet_Albedo.png"/>
+        <TextureReplacement TextureName="Octmap_LongitudeLatitude_128" ReplacementTextureFilePath="Textures\PollutedPlanet_Albedo.png"/>
+    </MaterialTextureProperty>
+
+    <MaterialTextureProperty Name="_Illum">
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_4096" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_2048" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_1024" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_512" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_256" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_128" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+    </MaterialTextureProperty>
+
+    <MaterialTextureProperty Name="_Pop">
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_4096" ReplacementTextureFilePath="Textures\pl_population_01_emissive_4096.png" />
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_2048" ReplacementTextureFilePath="Textures\pl_population_01_emissive_2048.png" />
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_1024" ReplacementTextureFilePath="Textures\pl_population_01_emissive_1024.png" />
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_512" ReplacementTextureFilePath="Textures\pl_population_01_emissive_1024.png" />
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_256" ReplacementTextureFilePath="Textures\pl_population_01_emissive_256.png" />
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_128" ReplacementTextureFilePath="Textures\pl_population_01_emissive_128.png" />
+    </MaterialTextureProperty>
+
+    <MaterialTextureProperty Name="_PopGradient">
+        <TextureReplacement TextureName="PL_Cold_Boreal_01_PopGradient_1024" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Cold_Boreal_01_PopGradient_512" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Cold_Boreal_01_PopGradient_256" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Cold_Boreal_01_PopGradient_128" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+    </MaterialTextureProperty>
+</PlanetRemappingDefinition>
+
+<PlanetRemappingDefinition Name="CustomPlanet08Mat">
+    <ColorReplacement Name="_CloudColor">
+        <Color Red="200" Green="200" Blue="200" Alpha="255" />
+    </ColorReplacement>
+
+    <ColorReplacement Name="_Color">
+        <Color Red="100" Green="150" Blue="100" Alpha="255" />
+    </ColorReplacement>
+
+    <ColorReplacement Name="_Color2">
+        <Color Red="100" Green="150" Blue="100" Alpha="255" />
+    </ColorReplacement>
+
+    <MaterialTextureProperty Name="_Diffuse">
+        <TextureReplacement TextureName="Octmap_LongitudeLatitude_2048" ReplacementTextureFilePath="Textures\PollutedPlanet_Albedo.png"/>
+        <TextureReplacement TextureName="Octmap_LongitudeLatitude_1024" ReplacementTextureFilePath="Textures\PollutedPlanet_Albedo.png"/>
+        <TextureReplacement TextureName="Octmap_LongitudeLatitude_512" ReplacementTextureFilePath="Textures\PollutedPlanet_Albedo.png"/>
+        <TextureReplacement TextureName="Octmap_LongitudeLatitude_256" ReplacementTextureFilePath="Textures\PollutedPlanet_Albedo.png"/>
+        <TextureReplacement TextureName="Octmap_LongitudeLatitude_128" ReplacementTextureFilePath="Textures\PollutedPlanet_Albedo.png"/>
+    </MaterialTextureProperty>
+
+    <MaterialTextureProperty Name="_Illum">
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_4096" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_2048" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_1024" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_512" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_256" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Burning_Lava_01_Emissive_128" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+    </MaterialTextureProperty>
+
+    <MaterialTextureProperty Name="_Pop">
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_4096" ReplacementTextureFilePath="Textures\pl_population_01_emissive_4096.png" />
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_2048" ReplacementTextureFilePath="Textures\pl_population_01_emissive_2048.png" />
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_1024" ReplacementTextureFilePath="Textures\pl_population_01_emissive_1024.png" />
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_512" ReplacementTextureFilePath="Textures\pl_population_01_emissive_1024.png" />
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_256" ReplacementTextureFilePath="Textures\pl_population_01_emissive_256.png" />
+        <TextureReplacement TextureName="PL_Population_Cold_Boreal_01_Emissive_128" ReplacementTextureFilePath="Textures\pl_population_01_emissive_128.png" />
+    </MaterialTextureProperty>
+
+    <MaterialTextureProperty Name="_PopGradient">
+        <TextureReplacement TextureName="PL_Cold_Boreal_01_PopGradient_1024" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Cold_Boreal_01_PopGradient_512" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Cold_Boreal_01_PopGradient_256" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+        <TextureReplacement TextureName="PL_Cold_Boreal_01_PopGradient_128" ReplacementTextureFilePath="Textures\Gas_Emissive.png" />
+    </MaterialTextureProperty>
+</PlanetRemappingDefinition>
+
+</Datatable>

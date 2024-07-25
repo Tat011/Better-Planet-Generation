@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/TechnologyHelperVariableDefinition.xsd">
+    <!-- HELPER VARIABLES -->
+    <!-- These are used by the TechnologyHelper formulas in the TechnologyDefinitions to suggest which tech should be researched next. -->
+    <!-- Add Operations, RefinedProperties, Int and Values to get the value you desire. -->
+    <!-- Then use the result in the TechnologyDefinition's formula to calculate the technology score (interest) -->
+    
+    <!-- Values allow you to get simulation-dependent information and use the following as sources: -->
+    <!-- - Empire: the empire for which the technology is evaluated -->
+    <!-- - KnownEmpires: the empires with which the empire has the IsKnown diplomatic ability -->
+    <!-- - AllEmpires: all empires including empire for which tech is evaluated -->
+    <!-- - VisibleSystems: all systems which are at least revealed for the empire -->
+    <!-- - OwnedSystems: StarSystemNodes of the systems owned by the empire. Attention! Not ColonizedStarSystems! Use Empire and a path to access ColonizedStarSystems. -->
+    <!-- - NeutralSystems: StarSystemNodes of the galaxy which are not owned by anyone -->
+    <!-- - AllSystems: All the StarSystemNodes of the galaxy, which are not undiscoverables for the empire -->
+    
+    <!-- Note that the score calculated with the formula is then divided by the cost of the technology to get the final score -->
+<!--Gas Fertile-->
+    <TechnologyHelperVariableDefinition Name="AvailableGasFertilePlanets">
+        <Operation Operator="Addition">
+            <Value Source="VisibleSystems" Path="ClassStarSystem/ClassPlanet,PlanetTypeCustom01"/>
+            <Value Source="OwnedSystems" Path="ClassStarSystem/ClassPlanet,PlanetTypeCustom01" Multiplier="0.5"/>
+        </Operation>
+    </TechnologyHelperVariableDefinition>
+
+    <TechnologyHelperVariableDefinition Name="OwnedGasFertilePlanets">
+            <Value Source="OwnedSystems" Path="ClassStarSystem/ClassColonizedPlanet,PlanetTypeCustom01" />
+    </TechnologyHelperVariableDefinition>
+
+<!--Gas Overgrown-->
+    <TechnologyHelperVariableDefinition Name="AvailableGasOvergrownPlanets">
+        <Operation Operator="Addition">
+            <Value Source="VisibleSystems" Path="ClassStarSystem/ClassPlanet,PlanetTypeCustom02"/>
+            <Value Source="OwnedSystems" Path="ClassStarSystem/ClassPlanet,PlanetTypeCustom02" Multiplier="0.5"/>
+        </Operation>
+    </TechnologyHelperVariableDefinition>
+
+    <TechnologyHelperVariableDefinition Name="OwnedGasOvergrownPlanets">
+            <Value Source="OwnedSystems" Path="ClassStarSystem/ClassColonizedPlanet,PlanetTypeCustom02" />
+    </TechnologyHelperVariableDefinition>
+
+<!--Gas Dwarf-->
+    <TechnologyHelperVariableDefinition Name="AvailableGasDwarfPlanets">
+        <Operation Operator="Addition">
+            <Value Source="VisibleSystems" Path="ClassStarSystem/ClassPlanet,PlanetTypeCustom03"/>
+            <Value Source="OwnedSystems" Path="ClassStarSystem/ClassPlanet,PlanetTypeCustom03" Multiplier="0.5"/>
+        </Operation>
+    </TechnologyHelperVariableDefinition>
+
+    <TechnologyHelperVariableDefinition Name="OwnedGasDwarfPlanets">
+            <Value Source="OwnedSystems" Path="ClassStarSystem/ClassColonizedPlanet,PlanetTypeCustom03" />
+    </TechnologyHelperVariableDefinition>
+
+<!--Gas Chilly-->
+    <TechnologyHelperVariableDefinition Name="AvailableGasChillyPlanets">
+        <Operation Operator="Addition">
+            <Value Source="VisibleSystems" Path="ClassStarSystem/ClassPlanet,PlanetTypeCustom04"/>
+            <Value Source="OwnedSystems" Path="ClassStarSystem/ClassPlanet,PlanetTypeCustom04" Multiplier="0.5"/>
+        </Operation>
+    </TechnologyHelperVariableDefinition>
+
+    <TechnologyHelperVariableDefinition Name="OwnedGasChillyPlanets">
+            <Value Source="OwnedSystems" Path="ClassStarSystem/ClassColonizedPlanet,PlanetTypeCustom04" />
+    </TechnologyHelperVariableDefinition>
+
+<!--City-->
+    <TechnologyHelperVariableDefinition Name="AvailableCityPlanetPlanets">
+        <Operation Operator="Addition">
+            <Value Source="VisibleSystems" Path="ClassStarSystem/ClassPlanet,PlanetTypeCustom05"/>
+            <Value Source="OwnedSystems" Path="ClassStarSystem/ClassPlanet,PlanetTypeCustom05" Multiplier="0.5"/>
+        </Operation>
+    </TechnologyHelperVariableDefinition>
+
+    <TechnologyHelperVariableDefinition Name="OwnedCityPlanetPlanets">
+            <Value Source="OwnedSystems" Path="ClassStarSystem/ClassColonizedPlanet,PlanetTypeCustom05" />
+    </TechnologyHelperVariableDefinition>
+
+<!--Farm-->
+    <TechnologyHelperVariableDefinition Name="AvailableFarmPlanetPlanets">
+        <Operation Operator="Addition">
+            <Value Source="VisibleSystems" Path="ClassStarSystem/ClassPlanet,PlanetTypeCustom06"/>
+            <Value Source="OwnedSystems" Path="ClassStarSystem/ClassPlanet,PlanetTypeCustom06" Multiplier="0.5"/>
+        </Operation>
+    </TechnologyHelperVariableDefinition>
+
+    <TechnologyHelperVariableDefinition Name="OwnedFarmPlanets">
+            <Value Source="OwnedSystems" Path="ClassStarSystem/ClassColonizedPlanet,PlanetTypeCustom06" />
+    </TechnologyHelperVariableDefinition>
+
+<!--Garbage-->
+    <TechnologyHelperVariableDefinition Name="AvailableGarbagePlanetPlanets">
+        <Operation Operator="Addition">
+            <Value Source="VisibleSystems" Path="ClassStarSystem/ClassPlanet,PlanetTypeCustom07"/>
+            <Value Source="OwnedSystems" Path="ClassStarSystem/ClassPlanet,PlanetTypeCustom07" Multiplier="0.5"/>
+        </Operation>
+    </TechnologyHelperVariableDefinition>
+
+    <TechnologyHelperVariableDefinition Name="OwnedCityGarbagePlanets">
+            <Value Source="OwnedSystems" Path="ClassStarSystem/ClassColonizedPlanet,PlanetTypeCustom07" />
+    </TechnologyHelperVariableDefinition>
+
+<!--Polluted-->
+    <TechnologyHelperVariableDefinition Name="AvailablePollutedPlanetPlanets">
+        <Operation Operator="Addition">
+            <Value Source="VisibleSystems" Path="ClassStarSystem/ClassPlanet,PlanetTypeCustom08"/>
+            <Value Source="OwnedSystems" Path="ClassStarSystem/ClassPlanet,PlanetTypeCustom08" Multiplier="0.5"/>
+        </Operation>
+    </TechnologyHelperVariableDefinition>
+
+    <TechnologyHelperVariableDefinition Name="OwnedCityPollutedPlanets">
+            <Value Source="OwnedSystems" Path="ClassStarSystem/ClassColonizedPlanet,PlanetTypeCustom08" />
+    </TechnologyHelperVariableDefinition>
+
+</Datatable>
