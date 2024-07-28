@@ -40,7 +40,7 @@ Changes that don't seem to quite work (sorry):
     <Author>Tat011</Author>
     <Homepage>https://steamcommunity.com/sharedfiles/filedetails/?id=2789073737</Homepage>
     <PreviewImageFile>ModIcon.png</PreviewImageFile>
-    <ReleaseNotes>Initial release.</ReleaseNotes>
+    <ReleaseNotes>Fixed depletion values.</ReleaseNotes>
     <Tags>Gameplay</Tags>
 		<!-- To check what plugins are valid, and the order in which they need to go, check the Documentation/Endless_Space_2.xml file -->
     <Plugins>
